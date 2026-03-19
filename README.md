@@ -35,7 +35,7 @@ The system features a dual-personality that flows naturally based on the "breath
 🛠️ Technical Persona: When discussing STM32, Embedded Systems, or Sony Alpha photography specs, her "Engineering Rigor" takes over, ensuring precision and professional depth.
 
 🛠️ Deployment Guide
-Import 3.yml into your Dify (v0.6.0+) environment.
+Import Kagurazaka-Multi-Modal-Sentinel(kmms).yml into your Dify (v0.6.0+) environment.
 
 Configure the following API keys:
 
@@ -90,7 +90,7 @@ LLM 3 (Final Audit)：逻辑与风控最后一道防线。
 🛠️ 技术人格：在涉及 STM32、嵌入式开发或 Sony Alpha 摄影参数时，智商强制上线，表现出极高的工程严谨性。
 
 🛠️ 部署说明
-导入 3.yml 到你的 Dify (v0.6.0+) 环境。
+导入 Kagurazaka-Multi-Modal-Sentinel(kmms).yml 到你的 Dify (v0.6.0+) 环境。
 
 配置以下插件/模型 API Key：
 
