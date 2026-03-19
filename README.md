@@ -1,6 +1,6 @@
-# Kagurazaka-Multi-Modal-Sentinel
+# Kagurazaka-Multi-Modal-Service
 A Dify-based routing system that synergizes text and image intent via a synchronization barrier. It distinguishes memes from technical queries with engineering rigor and an expert photographer’s eye. Featuring a final logic audit node, it exercises "bounded intelligence": if it replies "kagurazaka不知道哦," it is a conscious decision to remain silent.
-Kagurazaka Multi-Modal Sentinel (KMMS)
+Kagurazaka Multi-Modal Service (KMMS)
 "A sophisticated stack of engineering logic and a manifestation of 'bounded intelligence': while relentlessly expanding its capabilities, it consciously retains the right to remain silent."
 
 📌 Project Orientation
@@ -35,7 +35,7 @@ The system features a dual-personality that flows naturally based on the "breath
 🛠️ Technical Persona: When discussing STM32, Embedded Systems, or Sony Alpha photography specs, her "Engineering Rigor" takes over, ensuring precision and professional depth.
 
 🛠️ Deployment Guide
-Import Kagurazaka-Multi-Modal-Sentinel(KMMS).yml into your Dify (v0.6.0+) environment.
+Import Kagurazaka-Multi-Modal-Service(KMMS).yml into your Dify (v0.6.0+) environment.
 
 Configure the following API keys:
 
@@ -55,7 +55,7 @@ If the system determines a request is anomalous or logically unsound, it trigger
 “kagurazaka不知道哦”
 
 This is a conscious exercise of "bounded intelligence"—retaining the right to remain silent.
-Kagurazaka Multi-Modal Sentinel (KMMS)
+Kagurazaka Multi-Modal Service (KMMS)
 “既是工程逻辑的堆叠，也是一种‘有边界感的智能’：既追求能力边界，也清醒地保留不回答的权利。”
 
 📌 项目定位
@@ -90,7 +90,7 @@ LLM 3 (Final Audit)：逻辑与风控最后一道防线。
 🛠️ 技术人格：在涉及 STM32、嵌入式开发或 Sony Alpha 摄影参数时，智商强制上线，表现出极高的工程严谨性。
 
 🛠️ 部署说明
-导入 Kagurazaka-Multi-Modal-Sentinel(KMMS).yml 到你的 Dify (v0.6.0+) 环境。
+导入 Kagurazaka-Multi-Modal-Service(KMMS).yml 到你的 Dify (v0.6.0+) 环境。
 
 配置以下插件/模型 API Key：
 
