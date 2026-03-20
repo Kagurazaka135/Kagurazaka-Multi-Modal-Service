@@ -110,3 +110,4 @@ GPT-4 (分支处理)
 “kagurazaka不知道哦”
 
 这意味着系统正在行使它“不回答的权利”
+（dify咋就chantfolw有会话变量啊，workfolw没有啊，真的我KMMS想做记忆只能骚操作）
