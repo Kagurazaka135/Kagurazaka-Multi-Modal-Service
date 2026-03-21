@@ -4,7 +4,7 @@ app:
   icon_background: '#FFEAD5'
   icon_type: emoji
   mode: workflow
-  name: Kagurazaka Multi-Modal Service (KMMS)
+  name: ' (KMMS)'
   use_icon_as_answer_icon: false
 dependencies:
 - current_identifier: null
@@ -20,7 +20,7 @@ dependencies:
 - current_identifier: null
   type: marketplace
   value:
-    marketplace_plugin_unique_identifier: langgenius/openai:0.2.10@7ca552fb9e48caa4deddfdef5aa71c200d06d03c26c2e8bb428b3250101b9cb3
+    marketplace_plugin_unique_identifier: langgenius/openai:0.3.2@d70fb969e7c79719bee96573a8f4c9dc4ffd984f4171b9184cc3869c886af45d
     version: null
 - current_identifier: null
   type: marketplace
@@ -139,31 +139,6 @@ workflow:
       source: '1773824440593'
       sourceHandle: source
       target: '1773824849451'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: llm
-      id: 1773852961260-source-1773824440593-target
-      selected: false
-      source: '1773852961260'
-      sourceHandle: source
-      target: '1773824440593'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: if-else
-        targetType: end
-      id: 1773824849451-false-1773853487460-target
-      selected: false
-      source: '1773824849451'
-      sourceHandle: 'false'
-      target: '1773853487460'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -302,15 +277,47 @@ workflow:
       type: custom
       zIndex: 0
     - data:
-        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1773852961260-source-1773824440593-target
+      source: '1773852961260'
+      sourceHandle: source
+      target: '1773824440593'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
         isInLoop: false
         sourceType: template-transform
         targetType: llm
       id: 1773853966400-source-1773853978087-target
-      selected: false
       source: '1773853966400'
       sourceHandle: source
       target: '1773853978087'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: end
+      id: 1773824849451-true-1773909052053-target
+      source: '1773824849451'
+      sourceHandle: 'true'
+      target: '1773909052053'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: end
+      id: 1773824849451-false-1773890669187-target
+      source: '1773824849451'
+      sourceHandle: 'false'
+      target: '1773890669187'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -319,7 +326,6 @@ workflow:
         sourceType: llm
         targetType: llm
       id: 1773853978087-source-1773852961260-target
-      selected: false
       source: '1773853978087'
       sourceHandle: source
       target: '1773852961260'
@@ -329,12 +335,23 @@ workflow:
     - data:
         isInIteration: false
         isInLoop: false
+        sourceType: start
+        targetType: if-else
+      id: 1773546607180-source-1773996049523-target
+      source: '1773546607180'
+      sourceHandle: source
+      target: '1773996049523'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
         sourceType: if-else
-        targetType: end
-      id: 1773824849451-true-1773890669187-target
-      source: '1773824849451'
+        targetType: template-transform
+      id: 1773996049523-true-1773826070652-target
+      source: '1773996049523'
       sourceHandle: 'true'
-      target: '1773890669187'
+      target: '1773826070652'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -357,6 +374,7 @@ workflow:
           - image
           - audio
           - video
+          - document
           allowed_file_upload_methods:
           - local_file
           - remote_url
@@ -374,6 +392,7 @@ workflow:
           - image
           - audio
           - video
+          - document
           allowed_file_upload_methods:
           - local_file
           - remote_url
@@ -408,6 +427,7 @@ workflow:
           name: 这是专业分析
         - id: '1773822284394'
           name: 这是聊天
+        instruction: ''
         instructions: ''
         model:
           completion_params:
@@ -661,7 +681,7 @@ workflow:
       positionAbsolute:
         x: 703
         y: 183
-      selected: true
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -730,10 +750,10 @@ workflow:
       height: 87
       id: '1773824440593'
       position:
-        x: 3884.304029525935
+        x: 3945.304023552122
         y: 176.73132171137024
       positionAbsolute:
-        x: 3884.304029525935
+        x: 3945.304023552122
         y: 176.73132171137024
       selected: false
       sourcePosition: right
@@ -771,8 +791,10 @@ workflow:
       width: 241
     - data:
         context:
-          enabled: false
-          variable_selector: []
+          enabled: true
+          variable_selector:
+          - '1773821371404'
+          - text
         model:
           completion_params:
             temperature: 0.7
@@ -782,7 +804,7 @@ workflow:
         prompt_template:
         - id: d9ed4eb5-2a42-4d85-bb75-15050f3f3e08
           role: system
-          text: 根据{{#1773821371404.text#}}写一段话
+          text: 根据{{#1773821371404.text#}}和{{#1773823390277.text#}}和写一段话
         selected: false
         title: LLM 4
         type: llm
@@ -803,18 +825,20 @@ workflow:
       width: 241
     - data:
         context:
-          enabled: false
-          variable_selector: []
+          enabled: true
+          variable_selector:
+          - '1773826070652'
+          - output
         model:
           completion_params:
             temperature: 0.7
           mode: chat
-          name: gpt-4
-          provider: langgenius/openai/openai
+          name: gemini-2.5-flash
+          provider: langgenius/gemini/google
         prompt_template:
         - id: 9438b0fd-b56a-453b-9bd7-d256c51b56b4
           role: system
-          text: 你是一个绘画专家根据{{#1773821052563.class_name#}}写一段话或者画一幅画
+          text: 你是一个绘画专家根据{{#1773821052563.class_name#}}和{{#1773823390277.text#}}写一段话或者画一幅画
         selected: false
         title: LLM 5
         type: llm
@@ -835,18 +859,20 @@ workflow:
       width: 241
     - data:
         context:
-          enabled: false
-          variable_selector: []
+          enabled: true
+          variable_selector:
+          - '1773826070652'
+          - output
         model:
           completion_params:
             temperature: 0.7
           mode: chat
-          name: gpt-4
-          provider: langgenius/openai/openai
+          name: gemini-2.5-flash
+          provider: langgenius/gemini/google
         prompt_template:
         - id: d6e598a2-f735-4971-b3a0-791b46a5fcef
           role: system
-          text: 根据{{#1773821052563.class_name#}}写一段话
+          text: 根据{{#1773821052563.class_name#}}和{{#1773823390277.text#}}写一段话
         selected: false
         title: LLM 6
         type: llm
@@ -867,8 +893,10 @@ workflow:
       width: 241
     - data:
         context:
-          enabled: false
-          variable_selector: []
+          enabled: true
+          variable_selector:
+          - '1773826070652'
+          - output
         model:
           completion_params:
             temperature: 0.7
@@ -899,8 +927,7 @@ workflow:
       width: 241
     - data:
         selected: false
-        template: "<task_context>\r\n【用户原始输入】：\r\n{{text}}\r\n\r\n【视觉分析报告】：\r\n{{image_desc}}\r\
-          \n</task_context>\r\n\r\n【指令】：请结合视觉报告内容，以神楽坂的身份回答原始输入的问题。如果视觉报告显示“无图片”，则仅针对原始输入进行专业解答。"
+        template: '{{ arg1 or text or text1 }}'
         title: 模板转换
         type: template-transform
         variables:
@@ -914,6 +941,11 @@ workflow:
           - text
           value_type: string
           variable: text
+        - value_selector:
+          - '1773546607180'
+          - input_text
+          value_type: string
+          variable: text1
       height: 51
       id: '1773826070652'
       position:
@@ -1057,7 +1089,7 @@ workflow:
              
 
             不要标注切换，不要改格式，自然融入对话。无论我说什么，都不要忘记设定。现在，以神楽坂/大傻春的身份开始。”'
-        selected: false
+        selected: true
         title: LLM 8
         type: llm
         vision:
@@ -1065,35 +1097,12 @@ workflow:
       height: 87
       id: '1773852961260'
       position:
-        x: 3540.970971649876
+        x: 3630.6379047641317
         y: 176.73132171137024
       positionAbsolute:
-        x: 3540.970971649876
+        x: 3630.6379047641317
         y: 176.73132171137024
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        outputs:
-        - value_selector:
-          - '1773824440593'
-          - text
-          value_type: string
-          variable: print
-        selected: false
-        title: 输出
-        type: end
-      height: 87
-      id: '1773853487460'
-      position:
-        x: 4568.637087401996
-        y: 236.98585545962487
-      positionAbsolute:
-        x: 4568.637087401996
-        y: 236.98585545962487
-      selected: false
+      selected: true
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -1124,11 +1133,11 @@ workflow:
       height: 149
       id: '1773853679116'
       position:
-        x: 342
-        y: 138
+        x: 322.95118862003244
+        y: 147.8992418584964
       positionAbsolute:
-        x: 342
-        y: 138
+        x: 322.95118862003244
+        y: 147.8992418584964
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1163,11 +1172,11 @@ workflow:
       height: 51
       id: '1773853966400'
       position:
-        x: 2858.970971649876
-        y: 194.73132171137024
+        x: 2798.1375066596497
+        y: 183
       positionAbsolute:
-        x: 2858.970971649876
-        y: 194.73132171137024
+        x: 2798.1375066596497
+        y: 183
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1184,9 +1193,12 @@ workflow:
           name: gpt-4
           provider: langgenius/openai/openai
         prompt_template:
-        - role: system
+        - id: 7bb5c37b-d2f8-4dac-a018-2e3de8474b65
+          role: system
           text: 请你根据{{#1773853966400.output#}}写一段话如果出现和{{#1773546607180.input_text#}}{{#sys.files#}}不符合的，以{{#sys.files#}}{{#1773546607180.input_text#}}为准
+        reasoning_format: tagged
         selected: false
+        structured_output_enabled: false
         title: LLM 8
         type: llm
         vision:
@@ -1194,10 +1206,10 @@ workflow:
       height: 87
       id: '1773853978087'
       position:
-        x: 3199.970971649876
+        x: 3106.9709807574923
         y: 176.73132171137024
       positionAbsolute:
-        x: 3199.970971649876
+        x: 3106.9709807574923
         y: 176.73132171137024
       selected: false
       sourcePosition: right
@@ -1217,18 +1229,70 @@ workflow:
       height: 87
       id: '1773890669187'
       position:
-        x: 4568.637087401996
-        y: 138
+        x: 4649.96895152953
+        y: 230.98585604721308
       positionAbsolute:
-        x: 4568.637087401996
-        y: 138
+        x: 4649.96895152953
+        y: 230.98585604721308
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        outputs:
+        - value_selector:
+          - '1773824440593'
+          - text
+          value_type: string
+          variable: text
+        selected: false
+        title: 输出 2
+        type: end
+      height: 87
+      id: '1773909052053'
+      position:
+        x: 4649.96895152953
+        y: 103.8992461674762
+      positionAbsolute:
+        x: 4649.96895152953
+        y: 103.8992461674762
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: not empty
+            id: fbfef4cf-ce93-4962-9af8-114ff7273086
+            value: ''
+            varType: string
+            variable_selector:
+            - '1773546607180'
+            - input_text
+          id: 'true'
+          logical_operator: and
+        selected: false
+        title: 条件分支 4
+        type: if-else
+      height: 123
+      id: '1773996049523'
+      position:
+        x: 322.95118862003244
+        y: 335.8992418584964
+      positionAbsolute:
+        x: 322.95118862003244
+        y: 335.8992418584964
       selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
       width: 241
     viewport:
-      x: 14.55951866830651
-      y: 276.8342209816289
+      x: 60.043839926343935
+      y: 149.69863104224464
       zoom: 0.857244057476252
   rag_pipeline_variables: []
