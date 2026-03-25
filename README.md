@@ -111,3 +111,4 @@ GPT-4 (分支处理)
 
 这意味着系统正在行使它“不回答的权利”
 （dify咋就chantfolw有会话变量啊，workfolw没有啊，真的我KMMS想做记忆只能骚操作）
+KMMS那个版本是有记忆的，能处理的东西也更多，但是非常的不稳定，真使用的话，建议使用Kagurazaka Multi-Modal Service (KMMS)这个版本
