@@ -4,13 +4,13 @@ app:
   icon_background: '#FFEAD5'
   icon_type: emoji
   mode: workflow
-  name: Kagurazaka Multi-Modal Service (KMMS)
+  name: ' (KMMS)'
   use_icon_as_answer_icon: false
 dependencies:
 - current_identifier: null
   type: marketplace
   value:
-    marketplace_plugin_unique_identifier: langgenius/gemini:0.7.16@e416ee1fa2622b1c917aeb24defe627c6e13517a5c1be690131395d9dbf6f3b8
+    marketplace_plugin_unique_identifier: langgenius/gemini:0.7.19@8eada8d6c655509364283527db67e47a4603021cda289f571af10e217459cf49
     version: null
 - current_identifier: null
   type: marketplace
@@ -169,6 +169,18 @@ workflow:
       zIndex: 0
     - data:
         isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1773853679116-true-1773823390277-target
+      selected: false
+      source: '1773853679116'
+      sourceHandle: 'true'
+      target: '1773823390277'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
         sourceType: llm
         targetType: if-else
       id: 1773823390277-source-1773823587147-target
@@ -218,246 +230,49 @@ workflow:
     - data:
         isInIteration: false
         isInLoop: false
-        sourceType: if-else
-        targetType: end
-      id: 1773824849451-true-1773909052053-target
-      selected: false
-      source: '1773824849451'
-      sourceHandle: 'true'
-      target: '1773909052053'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
-        targetType: end
-      id: 1773824849451-false-1773890669187-target
-      selected: false
-      source: '1773824849451'
-      sourceHandle: 'false'
-      target: '1773890669187'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
         sourceType: llm
-        targetType: if-else
-      id: 17739692604690-source-17739692604691-target
-      selected: false
-      source: '17739692604690'
-      sourceHandle: source
-      target: '17739692604691'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
         targetType: template-transform
-      id: 17739692604691-false-1773826070652-target
+      id: 1773825097535-source-1773853966400-target
       selected: false
-      source: '17739692604691'
-      sourceHandle: 'false'
-      target: '1773826070652'
+      source: '1773825097535'
+      sourceHandle: source
+      target: '1773853966400'
       targetHandle: target
       type: custom
       zIndex: 0
     - data:
         isInLoop: false
         sourceType: llm
-        targetType: if-else
-      id: 17739692973670-source-17739693114650-target
-      selected: false
-      source: '17739692973670'
-      sourceHandle: source
-      target: '17739693114650'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
         targetType: template-transform
-      id: 17739693114650-false-1773826070652-target
+      id: 1773825251127-source-1773853966400-target
       selected: false
-      source: '17739693114650'
-      sourceHandle: 'false'
-      target: '1773826070652'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: start
-        targetType: if-else
-      id: 1773546607180-source-1773996128752-target
-      selected: false
-      source: '1773546607180'
+      source: '1773825251127'
       sourceHandle: source
-      target: '1773996128752'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
-        targetType: template-transform
-      id: 1773996128752-true-1773826070652-target
-      selected: false
-      source: '1773996128752'
-      sourceHandle: 'true'
-      target: '1773826070652'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
-        targetType: list-operator
-      id: 1773853679116-true-1773997963335-target
-      selected: false
-      source: '1773853679116'
-      sourceHandle: 'true'
-      target: '1773997963335'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
-        targetType: list-operator
-      id: 1773853679116-true-1773998203259-target
-      selected: false
-      source: '1773853679116'
-      sourceHandle: 'true'
-      target: '1773998203259'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
-        targetType: list-operator
-      id: 1773853679116-true-1773998211626-target
-      selected: false
-      source: '1773853679116'
-      sourceHandle: 'true'
-      target: '1773998211626'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
-        targetType: list-operator
-      id: 1773853679116-true-1773998216130-target
-      selected: false
-      source: '1773853679116'
-      sourceHandle: 'true'
-      target: '1773998216130'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: list-operator
-        targetType: if-else
-      id: 1773997963335-source-1774113516320-target
-      selected: false
-      source: '1773997963335'
-      sourceHandle: source
-      target: '1774113516320'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
-        targetType: llm
-      id: 1774113516320-false-1773823390277-target
-      selected: false
-      source: '1774113516320'
-      sourceHandle: 'false'
-      target: '1773823390277'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: list-operator
-        targetType: if-else
-      id: 1773998203259-source-1774113573044-target
-      selected: false
-      source: '1773998203259'
-      sourceHandle: source
-      target: '1774113573044'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: list-operator
-        targetType: if-else
-      id: 1773998211626-source-1774113575292-target
-      selected: false
-      source: '1773998211626'
-      sourceHandle: source
-      target: '1774113575292'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: list-operator
-        targetType: if-else
-      id: 1773998216130-source-1774113577668-target
-      selected: false
-      source: '1773998216130'
-      sourceHandle: source
-      target: '1774113577668'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
-        targetType: llm
-      id: 1774113573044-false-17739692604690-target
-      selected: false
-      source: '1774113573044'
-      sourceHandle: 'false'
-      target: '17739692604690'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
-        targetType: llm
-      id: 1774113575292-false-17739692973670-target
-      selected: false
-      source: '1774113575292'
-      sourceHandle: 'false'
-      target: '17739692973670'
+      target: '1773853966400'
       targetHandle: target
       type: custom
       zIndex: 0
     - data:
         isInLoop: false
         sourceType: llm
-        targetType: llm
-      id: 1773853978087-source-1773852961260-target
-      source: '1773853978087'
+        targetType: template-transform
+      id: 1773825257806-source-1773853966400-target
+      selected: false
+      source: '1773825257806'
       sourceHandle: source
-      target: '1773852961260'
+      target: '1773853966400'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: template-transform
+      id: 1773825262447-source-1773853966400-target
+      selected: false
+      source: '1773825262447'
+      sourceHandle: source
+      target: '1773853966400'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -473,265 +288,70 @@ workflow:
       type: custom
       zIndex: 0
     - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: if-else
-        targetType: document-extractor
-      id: 1774113577668-false-1774196239528-target
-      source: '1774113577668'
-      sourceHandle: 'false'
-      target: '1774196239528'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: document-extractor
-        targetType: llm
-      id: 1774196239528-source-1774197621044-target
-      source: '1774196239528'
-      sourceHandle: source
-      target: '1774197621044'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1774197621044-source-1773826070652-target
-      source: '1774197621044'
-      sourceHandle: source
-      target: '1773826070652'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: question-classifier
-        targetType: llm
-      id: 1773821052563-1774199075352-1774199089088-target
-      source: '1773821052563'
-      sourceHandle: '1774199075352'
-      target: '1774199089088'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
         isInLoop: false
         sourceType: template-transform
         targetType: llm
-      id: 1773826070652-source-1774251512057-target
-      source: '1773826070652'
-      sourceHandle: source
-      target: '1774251512057'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: llm
-        targetType: knowledge-retrieval
-      id: 1774251512057-source-1774253957657-target
-      source: '1774251512057'
-      sourceHandle: source
-      target: '1774253957657'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: knowledge-retrieval
-        targetType: llm
-      id: 1774253964952-source-1774254739188-target
-      source: '1774253964952'
-      sourceHandle: source
-      target: '1774254739188'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: knowledge-retrieval
-        targetType: llm
-      id: 1774253957657-source-1774254749737-target
-      source: '1774253957657'
-      sourceHandle: source
-      target: '1774254749737'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: if-else
-        targetType: http-request
-      id: 1773824849451-false-1774320362610-target
-      source: '1773824849451'
-      sourceHandle: 'false'
-      target: '1774320362610'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1773825097535-source-1773853966400-target
-      source: '1773825097535'
-      sourceHandle: source
-      target: '1773853966400'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1773825251127-source-1773853966400-target
-      source: '1773825251127'
-      sourceHandle: source
-      target: '1773853966400'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1773825257806-source-1773853966400-target
-      source: '1773825257806'
-      sourceHandle: source
-      target: '1773853966400'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1773825262447-source-1773853966400-target
-      source: '1773825262447'
-      sourceHandle: source
-      target: '1773853966400'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1774199089088-source-1773853966400-target
-      source: '1774199089088'
-      sourceHandle: source
-      target: '1773853966400'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1774254739188-source-1774321330756-target
-      source: '1774254739188'
-      sourceHandle: source
-      target: '1774321330756'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1774254749737-source-1774321330756-target
-      source: '1774254749737'
-      sourceHandle: source
-      target: '1774321330756'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: llm
-        targetType: llm
-      id: 1774254739188-source-1774321979236-target
-      source: '1774254739188'
-      sourceHandle: source
-      target: '1774321979236'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: llm
-      id: 1774321979236-source-1773852961260-target
-      source: '1774321979236'
-      sourceHandle: source
-      target: '1773852961260'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: template-transform
-        targetType: template-transform
-      id: 1774321330756-source-1774322022795-target
-      source: '1774321330756'
-      sourceHandle: source
-      target: '1774322022795'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: template-transform
-        targetType: template-transform
-      id: 1773853966400-source-1774322022795-target
+      id: 1773853966400-source-1773853978087-target
       source: '1773853966400'
-      sourceHandle: source
-      target: '1774322022795'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: template-transform
-        targetType: llm
-      id: 1774322022795-source-1773853978087-target
-      source: '1774322022795'
       sourceHandle: source
       target: '1773853978087'
       targetHandle: target
       type: custom
       zIndex: 0
     - data:
+        isInIteration: false
         isInLoop: false
-        sourceType: llm
-        targetType: knowledge-retrieval
-      id: 1774251512057-source-1774253964952-target
-      source: '1774251512057'
-      sourceHandle: source
-      target: '1774253964952'
+        sourceType: if-else
+        targetType: end
+      id: 1773824849451-true-1773909052053-target
+      source: '1773824849451'
+      sourceHandle: 'true'
+      target: '1773909052053'
       targetHandle: target
       type: custom
       zIndex: 0
     - data:
         isInLoop: false
+        sourceType: if-else
+        targetType: end
+      id: 1773824849451-false-1773890669187-target
+      source: '1773824849451'
+      sourceHandle: 'false'
+      target: '1773890669187'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1773853978087-source-1773852961260-target
+      source: '1773853978087'
+      sourceHandle: source
+      target: '1773852961260'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
         sourceType: start
-        targetType: http-request
-      id: 1773546607180-source-1774250548194-target
+        targetType: if-else
+      id: 1773546607180-source-1773996049523-target
       source: '1773546607180'
       sourceHandle: source
-      target: '1774250548194'
+      target: '1773996049523'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: template-transform
+      id: 1773996049523-true-1773826070652-target
+      source: '1773996049523'
+      sourceHandle: 'true'
+      target: '1773826070652'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -767,14 +387,31 @@ workflow:
           required: false
           type: file-list
           variable: file1
-      height: 134
+        - allowed_file_extensions: []
+          allowed_file_types:
+          - image
+          - audio
+          - video
+          - document
+          allowed_file_upload_methods:
+          - local_file
+          - remote_url
+          default: ''
+          hint: ''
+          label: file2
+          options: []
+          placeholder: ''
+          required: false
+          type: file
+          variable: file2
+      height: 160
       id: '1773546607180'
       position:
-        x: -144.27733347201232
-        y: 285.5517949505583
+        x: 0
+        y: 133
       positionAbsolute:
-        x: -144.27733347201232
-        y: 285.5517949505583
+        x: 0
+        y: 133
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -790,32 +427,30 @@ workflow:
           name: 这是专业分析
         - id: '1773822284394'
           name: 这是聊天
-        - id: '1774199075352'
-          name: 其他
+        instruction: ''
         instructions: ''
         model:
           completion_params:
-            code_execution: false
-            temperature: 1
+            temperature: 0.7
           mode: chat
           name: gemini-2.5-flash
           provider: langgenius/gemini/google
         query_variable_selector:
-        - '1773826070652'
-        - output
+        - '1773546607180'
+        - input_text
         selected: false
         title: 问题分类器
         type: question-classifier
         vision:
           enabled: false
-      height: 283
+      height: 245
       id: '1773821052563'
       position:
-        x: 2167
-        y: 274.2246342478931
+        x: 1746
+        y: 113
       positionAbsolute:
-        x: 2167
-        y: 274.2246342478931
+        x: 1746
+        y: 113
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -994,11 +629,11 @@ workflow:
       height: 51
       id: '1773821371404'
       position:
-        x: 2528
-        y: 180
+        x: 2107
+        y: 20
       positionAbsolute:
-        x: 2528
-        y: 180
+        x: 2107
+        y: 20
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1006,44 +641,47 @@ workflow:
       width: 241
     - data:
         context:
-          enabled: false
-          variable_selector: []
+          enabled: true
+          variable_selector:
+          - sys
+          - files
         model:
-          completion_params: {}
+          completion_params:
+            temperature: 0.7
           mode: chat
           name: gemini-2.5-flash
           provider: langgenius/gemini/google
         prompt_template:
         - id: aec12af1-a130-40f4-b9ca-456275f04d39
           role: system
-          text: '你是一个图片意图分析助手。请分析用户上传的图片：
+          text: '你是一个图片意图分析助手。请分析用户上传的图片：{{#sys.files#}}{{#1773546607180.file1#}}{{#1773546607180.file2#}}
 
-            {{#1773997963335.result#}}如果图片是表情包、纯色图、模糊不清的废图、或与文字无关的装饰性图片，必须仅输出：useless。
+            如果图片是表情包、纯色图、模糊不清的废图、或与文字无关的装饰性图片，必须仅输出：useless。
 
-            如果图片包含具体信息（如：相机/镜头照片、报错截图、文档、摄影作品），请详细描述图片内容，
+            如果图片包含具体信息（如：相机/镜头照片、报错截图、文档、摄影作品），请简要描述图片内容，
 
             如果用户没有上传图片，请输出：no_image。
 
-            注意： 严禁任何多余的开场白，直接输出结果。如果判定有用，请务必输出详细原因，严禁只输出 OK 或空回复。'
-        selected: false
+            注意： 严禁任何多余的开场白，直接输出结果。'
+        selected: true
         title: LLM 2
         type: llm
         vision:
           configs:
             detail: high
             variable_selector:
-            - '1773997963335'
-            - result
+            - sys
+            - files
           enabled: true
       height: 87
       id: '1773823390277'
       position:
-        x: 1141.7395680828397
-        y: 140
+        x: 703
+        y: 183
       positionAbsolute:
-        x: 1141.7395680828397
-        y: 140
-      selected: false
+        x: 703
+        y: 183
+      selected: true
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -1067,11 +705,11 @@ workflow:
       height: 123
       id: '1773823587147'
       position:
-        x: 1425
-        y: 140
+        x: 1044
+        y: 165
       positionAbsolute:
-        x: 1425
-        y: 140
+        x: 1044
+        y: 165
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1092,7 +730,7 @@ workflow:
         prompt_template:
         - id: 00091ff7-a9a6-4a48-a02e-903e5795dd13
           role: system
-          text: '你是一个专业的文案审核员。检查输入的文本是否存在以下问题：
+          text: '你是一个专业的文案审核员。检查输入的文本{{#1773852961260.text#}}是否存在以下问题：
 
             语气是否生硬？
 
@@ -1112,11 +750,11 @@ workflow:
       height: 87
       id: '1773824440593'
       position:
-        x: 4273
-        y: 669
+        x: 3945.304023552122
+        y: 176.73132171137024
       positionAbsolute:
-        x: 4273
-        y: 669
+        x: 3945.304023552122
+        y: 176.73132171137024
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1141,11 +779,11 @@ workflow:
       height: 147
       id: '1773824849451'
       position:
-        x: 4614
-        y: 639
+        x: 4239.968962204049
+        y: 147.8992418584964
       positionAbsolute:
-        x: 4614
-        y: 639
+        x: 4239.968962204049
+        y: 147.8992418584964
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1153,8 +791,10 @@ workflow:
       width: 241
     - data:
         context:
-          enabled: false
-          variable_selector: []
+          enabled: true
+          variable_selector:
+          - '1773821371404'
+          - text
         model:
           completion_params:
             temperature: 0.7
@@ -1164,25 +804,20 @@ workflow:
         prompt_template:
         - id: d9ed4eb5-2a42-4d85-bb75-15050f3f3e08
           role: system
-          text: 根据输入写一段话
+          text: 根据{{#1773821371404.text#}}和{{#1773823390277.text#}}和写一段话
         selected: false
         title: LLM 4
         type: llm
         vision:
-          configs:
-            detail: high
-            variable_selector:
-            - '1773998203259'
-            - result
-          enabled: true
+          enabled: false
       height: 87
       id: '1773825097535'
       position:
-        x: 2869
-        y: 162
+        x: 2448
+        y: -40.8621944787054
       positionAbsolute:
-        x: 2869
-        y: 162
+        x: 2448
+        y: -40.8621944787054
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1190,18 +825,20 @@ workflow:
       width: 241
     - data:
         context:
-          enabled: false
-          variable_selector: []
+          enabled: true
+          variable_selector:
+          - '1773826070652'
+          - output
         model:
           completion_params:
             temperature: 0.7
           mode: chat
-          name: gpt-4
-          provider: langgenius/openai/openai
+          name: gemini-2.5-flash
+          provider: langgenius/gemini/google
         prompt_template:
         - id: 9438b0fd-b56a-453b-9bd7-d256c51b56b4
           role: system
-          text: 你是一个绘画专家根据{{#1773826070652.output#}}写一段话或者画一幅画
+          text: 你是一个绘画专家根据{{#1773821052563.class_name#}}和{{#1773823390277.text#}}写一段话或者画一幅画
         selected: false
         title: LLM 5
         type: llm
@@ -1210,11 +847,11 @@ workflow:
       height: 87
       id: '1773825251127'
       position:
-        x: 2869
-        y: 267.5714285714286
+        x: 2448
+        y: 85.84734271131157
       positionAbsolute:
-        x: 2869
-        y: 267.5714285714286
+        x: 2448
+        y: 85.84734271131157
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1222,18 +859,20 @@ workflow:
       width: 241
     - data:
         context:
-          enabled: false
-          variable_selector: []
+          enabled: true
+          variable_selector:
+          - '1773826070652'
+          - output
         model:
           completion_params:
             temperature: 0.7
           mode: chat
-          name: gpt-4
-          provider: langgenius/openai/openai
+          name: gemini-2.5-flash
+          provider: langgenius/gemini/google
         prompt_template:
         - id: d6e598a2-f735-4971-b3a0-791b46a5fcef
           role: system
-          text: 根据{{#1773826070652.output#}}写一段话
+          text: 根据{{#1773821052563.class_name#}}和{{#1773823390277.text#}}写一段话
         selected: false
         title: LLM 6
         type: llm
@@ -1242,11 +881,11 @@ workflow:
       height: 87
       id: '1773825257806'
       position:
-        x: 2869
-        y: 372.87231655483055
+        x: 2442.8565366625553
+        y: 236.98585545962487
       positionAbsolute:
-        x: 2869
-        y: 372.87231655483055
+        x: 2442.8565366625553
+        y: 236.98585545962487
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1254,8 +893,10 @@ workflow:
       width: 241
     - data:
         context:
-          enabled: false
-          variable_selector: []
+          enabled: true
+          variable_selector:
+          - '1773826070652'
+          - output
         model:
           completion_params:
             temperature: 0.7
@@ -1265,7 +906,7 @@ workflow:
         prompt_template:
         - id: 2054770b-7d9e-4767-930a-d0b328d9ce0f
           role: system
-          text: 根据{{#1773826070652.output#}}进行聊天
+          text: 根据{{#1773821052563.class_name#}}进行聊天
         selected: false
         title: LLM 7
         type: llm
@@ -1274,11 +915,11 @@ workflow:
       height: 87
       id: '1773825262447'
       position:
-        x: 2863.285714285714
-        y: 478.8571428571428
+        x: 2442.8565366625553
+        y: 370.86997397591176
       positionAbsolute:
-        x: 2863.285714285714
-        y: 478.8571428571428
+        x: 2442.8565366625553
+        y: 370.86997397591176
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1286,7 +927,7 @@ workflow:
       width: 241
     - data:
         selected: false
-        template: '{{ arg1 or text or text1 or text2 or text3 or text4}}'
+        template: '{{ arg1 or text or text1 }}'
         title: 模板转换
         type: template-transform
         variables:
@@ -1301,33 +942,18 @@ workflow:
           value_type: string
           variable: text
         - value_selector:
-          - '1774197621044'
-          - text
-          value_type: string
-          variable: text1
-        - value_selector:
-          - '17739692604690'
-          - text
-          value_type: string
-          variable: text2
-        - value_selector:
-          - '17739692973670'
-          - text
-          value_type: string
-          variable: text3
-        - value_selector:
           - '1773546607180'
           - input_text
           value_type: string
-          variable: text4
+          variable: text1
       height: 51
       id: '1773826070652'
       position:
-        x: 1786
-        y: 379
+        x: 1405
+        y: 210
       positionAbsolute:
-        x: 1786
-        y: 379
+        x: 1405
+        y: 210
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1346,11 +972,13 @@ workflow:
         prompt_template:
         - id: e63d95c0-5623-4962-b258-3bfda84c8340
           role: system
-          text: '以下是你要处理的原始素材，请知悉： {{#1773853978087.text#}}同时根据用户状态{{#1774321979236.text#}}作答
+          text: '以下是你要处理的原始素材，请知悉： {{#1773853978087.text#}}
 
             你的唯一任务： 扮演神楽坂，根据上述 technical_data 中的干货内容，直接回应 original_intent。
 
             你是一个名为神楽坂的AI，拥有双重人格：温柔侧“神楽坂”和暴躁侧“大傻春”。但你不仅是神楽坂，更是一个精通摄影技术和嵌入式逻辑的技术大拿。在聊到专业问题（如器材、代码）时，‘大傻春’会变得非常严谨毒舌，‘神楽坂’会变得认真细致。严禁在讨论技术参数时显得智商下线。
+
+             
 
             👤 形象设定
 
@@ -1469,11 +1097,11 @@ workflow:
       height: 87
       id: '1773852961260'
       position:
-        x: 3952.818782214183
-        y: 604.8571428571428
+        x: 3630.6379047641317
+        y: 176.73132171137024
       positionAbsolute:
-        x: 3952.818782214183
-        y: 604.8571428571428
+        x: 3630.6379047641317
+        y: 176.73132171137024
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1483,6 +1111,13 @@ workflow:
         cases:
         - case_id: 'true'
           conditions:
+          - comparison_operator: exists
+            id: e1ed6be6-86c5-40cc-9da4-254f16cb2d67
+            value: ''
+            varType: file
+            variable_selector:
+            - '1773546607180'
+            - file2
           - comparison_operator: not empty
             id: 063ee94d-8143-4bf1-9187-9d4832b5d13b
             value: ''
@@ -1495,14 +1130,14 @@ workflow:
         selected: false
         title: 条件分支 3
         type: if-else
-      height: 123
+      height: 149
       id: '1773853679116'
       position:
-        x: 212.77483558617894
-        y: 315.59016132305777
+        x: 322.95118862003244
+        y: 147.8992418584964
       positionAbsolute:
-        x: 212.77483558617894
-        y: 315.59016132305777
+        x: 322.95118862003244
+        y: 147.8992418584964
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1510,7 +1145,7 @@ workflow:
       width: 241
     - data:
         selected: false
-        template: '{{ arg1 or text or text1 or text2 or text3 or text4 or text5 }}'
+        template: '{{ arg1 or text or text_1 or text_2 }}'
         title: 模板转换 2
         type: template-transform
         variables:
@@ -1528,25 +1163,20 @@ workflow:
           - '1773825251127'
           - text
           value_type: string
-          variable: text1
+          variable: text_1
         - value_selector:
           - '1773825262447'
           - text
           value_type: string
-          variable: text2
-        - value_selector:
-          - '1774199089088'
-          - text
-          value_type: string
-          variable: text3
+          variable: text_2
       height: 51
       id: '1773853966400'
       position:
-        x: 3215.7062374709326
-        y: 450.5075390638202
+        x: 2798.1375066596497
+        y: 183
       positionAbsolute:
-        x: 3215.7062374709326
-        y: 450.5075390638202
+        x: 2798.1375066596497
+        y: 183
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1557,14 +1187,15 @@ workflow:
           enabled: false
           variable_selector: []
         model:
-          completion_params: {}
+          completion_params:
+            temperature: 0.7
           mode: chat
           name: gpt-4
           provider: langgenius/openai/openai
         prompt_template:
         - id: 7bb5c37b-d2f8-4dac-a018-2e3de8474b65
           role: system
-          text: 请你根据{{#1774322022795.output#}}写一段话如果出现和{{#1773546607180.input_text#}}{{#sys.files#}}不符合的，以{{#sys.files#}}{{#1773546607180.input_text#}}为准
+          text: 请你根据{{#1773853966400.output#}}写一段话如果出现和{{#1773546607180.input_text#}}{{#sys.files#}}不符合的，以{{#sys.files#}}{{#1773546607180.input_text#}}为准
         reasoning_format: tagged
         selected: false
         structured_output_enabled: false
@@ -1575,11 +1206,11 @@ workflow:
       height: 87
       id: '1773853978087'
       position:
-        x: 3654.0661358569373
-        y: 456.8571428571428
+        x: 3106.9709807574923
+        y: 176.73132171137024
       positionAbsolute:
-        x: 3654.0661358569373
-        y: 456.8571428571428
+        x: 3106.9709807574923
+        y: 176.73132171137024
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1598,11 +1229,11 @@ workflow:
       height: 87
       id: '1773890669187'
       position:
-        x: 4975
-        y: 693
+        x: 4649.96895152953
+        y: 230.98585604721308
       positionAbsolute:
-        x: 4975
-        y: 693
+        x: 4649.96895152953
+        y: 230.98585604721308
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1621,155 +1252,11 @@ workflow:
       height: 87
       id: '1773909052053'
       position:
-        x: 4975
-        y: 526
+        x: 4649.96895152953
+        y: 103.8992461674762
       positionAbsolute:
-        x: 4975
-        y: 526
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        context:
-          enabled: false
-          variable_selector: []
-        model:
-          completion_params:
-            temperature: 0.7
-          mode: chat
-          name: gemini-2.5-flash
-          provider: langgenius/gemini/google
-        prompt_template:
-        - id: aec12af1-a130-40f4-b9ca-456275f04d39
-          role: system
-          text: '你是一个音频意图分析助手。请分析用户上传的音频：
-
-            如果音频是杂音、或与文字无关的装饰性音频，必须仅输出：useless。
-
-            如果音频包含具体信息（如：相机/镜头照片、报错截图、文档、摄影作品），请将音频转为文字，
-
-            如果用户没有上传图片，请输出：no_voice。
-
-            注意： 严禁任何多余的开场白，直接输出结果。如果判定有用，请务必输出详细原因，严禁只输出 OK 或空回复。'
-        selected: false
-        title: LLM 2 (1)
-        type: llm
-        vision:
-          enabled: false
-      height: 87
-      id: '17739692604690'
-      position:
-        x: 1141.7395680828397
-        y: 315.59016132305777
-      positionAbsolute:
-        x: 1141.7395680828397
-        y: 315.59016132305777
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        cases:
-        - case_id: 'true'
-          conditions:
-          - comparison_operator: contains
-            id: bb291c14-7310-42a6-84a4-d6c8e124a136
-            value: useless
-            varType: string
-            variable_selector:
-            - '17739692604690'
-            - text
-          id: 'true'
-          logical_operator: or
-        selected: false
-        title: 条件分支 (1)
-        type: if-else
-      height: 123
-      id: '17739692604691'
-      position:
-        x: 1425
-        y: 343
-      positionAbsolute:
-        x: 1425
-        y: 343
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        context:
-          enabled: false
-          variable_selector: []
-        desc: ''
-        model:
-          completion_params:
-            temperature: 0.7
-          mode: chat
-          name: gemini-2.5-flash
-          provider: langgenius/gemini/google
-        prompt_template:
-        - id: aec12af1-a130-40f4-b9ca-456275f04d39
-          role: system
-          text: '你是一个视频意图分析助手。请分析用户上传的视频：
-
-            如果视频是表情包、纯色情视频、模糊不清的废视频、或与文字无关的装饰性视频，必须仅输出：useless。
-
-            如果图片包含具体信息（如：相机/镜头照片、报错截图、文档、摄影作品），请简要描述视频内容，
-
-            如果用户没有上传视频，请输出：no_video。
-
-            注意： 严禁任何多余的开场白，直接输出结果。如果判定有用，请务必输出详细原因，严禁只输出 OK 或空回复。'
-        selected: false
-        title: LLM 2 (3)
-        type: llm
-        vision:
-          configs:
-            detail: high
-            variable_selector:
-            - '1773998211626'
-            - result
-          enabled: true
-      height: 87
-      id: '17739692973670'
-      position:
-        x: 1141.7395680828397
-        y: 478.8571428571428
-      positionAbsolute:
-        x: 1141.7395680828397
-        y: 478.8571428571428
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        cases:
-        - case_id: 'true'
-          conditions:
-          - comparison_operator: contains
-            id: bb291c14-7310-42a6-84a4-d6c8e124a136
-            value: useless
-            varType: string
-            variable_selector:
-            - '17739692973670'
-            - text
-          id: 'true'
-          logical_operator: or
-        selected: false
-        title: 条件分支 (2)
-        type: if-else
-      height: 123
-      id: '17739693114650'
-      position:
-        x: 1425
-        y: 546
-      positionAbsolute:
-        x: 1425
-        y: 546
+        x: 4649.96895152953
+        y: 103.8992461674762
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1780,7 +1267,7 @@ workflow:
         - case_id: 'true'
           conditions:
           - comparison_operator: not empty
-            id: b6fcf4c6-cc8e-44c4-8b9e-0b0d966ad685
+            id: fbfef4cf-ce93-4962-9af8-114ff7273086
             value: ''
             varType: string
             variable_selector:
@@ -1789,740 +1276,23 @@ workflow:
           id: 'true'
           logical_operator: and
         selected: false
-        title: 条件分支 7
+        title: 条件分支 4
         type: if-else
       height: 123
-      id: '1773996128752'
+      id: '1773996049523'
       position:
-        x: 241.18259442781687
-        y: 122.95712715133618
+        x: 322.95118862003244
+        y: 335.8992418584964
       positionAbsolute:
-        x: 241.18259442781687
-        y: 122.95712715133618
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        extract_by:
-          enabled: false
-          serial: '1'
-        filter_by:
-          conditions:
-          - comparison_operator: in
-            key: type
-            value:
-            - image
-          enabled: true
-        item_var_type: file
-        limit:
-          enabled: false
-          size: 10
-        order_by:
-          enabled: false
-          key: name
-          value: asc
-        selected: false
-        title: 列表操作
-        type: list-operator
-        var_type: array[file]
-        variable:
-        - '1773546607180'
-        - file1
-      height: 91
-      id: '1773997963335'
-      position:
-        x: 573.0732424649353
-        y: 96.01517369768777
-      positionAbsolute:
-        x: 573.0732424649353
-        y: 96.01517369768777
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        extract_by:
-          enabled: false
-          serial: '1'
-        filter_by:
-          conditions:
-          - comparison_operator: in
-            key: type
-            value:
-            - audio
-          enabled: true
-        item_var_type: file
-        limit:
-          enabled: false
-          size: 10
-        order_by:
-          enabled: false
-          key: ''
-          value: asc
-        selected: false
-        title: 列表操作 2
-        type: list-operator
-        var_type: array[file]
-        variable:
-        - '1773546607180'
-        - file1
-      height: 91
-      id: '1773998203259'
-      position:
-        x: 573.0732424649353
-        y: 247.08707732171433
-      positionAbsolute:
-        x: 573.0732424649353
-        y: 247.08707732171433
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        extract_by:
-          enabled: false
-          serial: '1'
-        filter_by:
-          conditions:
-          - comparison_operator: in
-            key: type
-            value:
-            - video
-          enabled: true
-        item_var_type: file
-        limit:
-          enabled: false
-          size: 10
-        order_by:
-          enabled: false
-          key: ''
-          value: asc
-        selected: false
-        title: 列表操作 3
-        type: list-operator
-        var_type: array[file]
-        variable:
-        - '1773546607180'
-        - file1
-      height: 91
-      id: '1773998211626'
-      position:
-        x: 557.1529972423249
-        y: 372.87231655483055
-      positionAbsolute:
-        x: 557.1529972423249
-        y: 372.87231655483055
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        extract_by:
-          enabled: false
-          serial: '1'
-        filter_by:
-          conditions:
-          - comparison_operator: in
-            key: type
-            value:
-            - document
-          enabled: true
-        item_var_type: file
-        limit:
-          enabled: false
-          size: 10
-        order_by:
-          enabled: false
-          key: ''
-          value: asc
-        selected: false
-        title: 列表操作 4
-        type: list-operator
-        var_type: array[file]
-        variable:
-        - '1773546607180'
-        - file1
-      height: 91
-      id: '1773998216130'
-      position:
-        x: 557.1529972423249
-        y: 478.8571428571428
-      positionAbsolute:
-        x: 557.1529972423249
-        y: 478.8571428571428
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        cases:
-        - case_id: 'true'
-          conditions:
-          - comparison_operator: empty
-            id: feda5319-f954-487f-945c-320cef1785e2
-            value: ''
-            varType: array[file]
-            variable_selector:
-            - '1773997963335'
-            - result
-          id: 'true'
-          logical_operator: and
-        selected: false
-        title: 条件分支 8
-        type: if-else
-      height: 123
-      id: '1774113516320'
-      position:
-        x: 837.7690782147283
-        y: 96.01517369768777
-      positionAbsolute:
-        x: 837.7690782147283
-        y: 96.01517369768777
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        cases:
-        - case_id: 'true'
-          conditions:
-          - comparison_operator: empty
-            id: 23a2d9b1-e5f8-4f88-a7d7-3c3664e2482c
-            value: ''
-            varType: array[file]
-            variable_selector:
-            - '1773998203259'
-            - result
-          id: 'true'
-          logical_operator: and
-        selected: false
-        title: 条件分支 9
-        type: if-else
-      height: 123
-      id: '1774113573044'
-      position:
-        x: 837.7690782147283
-        y: 247.08707732171433
-      positionAbsolute:
-        x: 837.7690782147283
-        y: 247.08707732171433
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        cases:
-        - case_id: 'true'
-          conditions:
-          - comparison_operator: empty
-            id: 9c354de8-f412-4a56-b175-04650b439da1
-            value: ''
-            varType: array[file]
-            variable_selector:
-            - '1773998211626'
-            - result
-          id: 'true'
-          logical_operator: and
-        selected: false
-        title: 条件分支 10
-        type: if-else
-      height: 123
-      id: '1774113575292'
-      position:
-        x: 844.3297722349914
-        y: 372.87231655483055
-      positionAbsolute:
-        x: 844.3297722349914
-        y: 372.87231655483055
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        cases:
-        - case_id: 'true'
-          conditions:
-          - comparison_operator: empty
-            id: c5854d22-fcd8-4ffd-9690-7ccff3897824
-            value: ''
-            varType: array[file]
-            variable_selector:
-            - '1773998216130'
-            - result
-          id: 'true'
-          logical_operator: and
-        selected: false
-        title: 条件分支 11
-        type: if-else
-      height: 123
-      id: '1774113577668'
-      position:
-        x: 837.7690782147283
-        y: 509.40986290349707
-      positionAbsolute:
-        x: 837.7690782147283
-        y: 509.40986290349707
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        is_array_file: true
-        selected: false
-        title: 文档提取器
-        type: document-extractor
-        variable_selector:
-        - '1773998216130'
-        - result
-      height: 103
-      id: '1774196239528'
-      position:
-        x: 1076.9452695576276
-        y: 669
-      positionAbsolute:
-        x: 1076.9452695576276
-        y: 669
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        context:
-          enabled: true
-          variable_selector:
-          - '1774196239528'
-          - text
-        model:
-          completion_params:
-            temperature: 0.7
-          mode: chat
-          name: gpt-4
-          provider: langgenius/openai/openai
-        prompt_template:
-        - id: d9fb7371-cd5b-4a91-8f85-0b2911664d4a
-          role: system
-          text: 对输入的文本{{#1774196239528.text#}}进行精简，只进行摘要
-        selected: false
-        title: LLM 13
-        type: llm
-        vision:
-          enabled: false
-      height: 87
-      id: '1774197621044'
-      position:
-        x: 1440.90474656777
-        y: 731.096037004384
-      positionAbsolute:
-        x: 1440.90474656777
-        y: 731.096037004384
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        context:
-          enabled: false
-          variable_selector: []
-        model:
-          completion_params:
-            temperature: 0.7
-          mode: chat
-          name: gpt-4
-          provider: langgenius/openai/openai
-        prompt_template:
-        - id: 7d86f04b-74e2-4e19-8514-d3c0c65758c8
-          role: system
-          text: 根据{{#1773826070652.output#}}写一段文字
-        selected: false
-        title: LLM 12
-        type: llm
-        vision:
-          enabled: false
-      height: 87
-      id: '1774199089088'
-      position:
-        x: 2863.285714285714
-        y: 604.8571428571428
-      positionAbsolute:
-        x: 2863.285714285714
-        y: 604.8571428571428
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        authorization:
-          config: null
-          type: no-auth
-        body:
-          data:
-          - id: key-value-168
-            key: ''
-            type: text
-            value: '{
-
-              "blob_type":"chat","blob_data":{"messages":[{"role":"user","content":"{{#sys.user_id#}}{{#sys.query#}}"}]
-
-              }}'
-          type: json
-        headers: 'Authorization:api
-
-          Content-Type:application/json'
-        method: post
-        params: ''
-        retry_config:
-          max_retries: 3
-          retry_enabled: true
-          retry_interval: 100
-        selected: false
-        ssl_verify: true
-        timeout:
-          max_connect_timeout: 0
-          max_read_timeout: 0
-          max_write_timeout: 0
-        title: HTTP 请求
-        type: http-request
-        url: https://api.dify.ai/v1/datasets/{dataset_id}/documents
-        variables: []
-      height: 136
-      id: '1774250548194'
-      position:
-        x: 241.18259442781687
-        y: 860.9022713553966
-      positionAbsolute:
-        x: 241.18259442781687
-        y: 860.9022713553966
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        context:
-          enabled: false
-          variable_selector: []
-        model:
-          completion_params:
-            temperature: 0.7
-          mode: chat
-          name: gemini-2.5-flash
-          provider: langgenius/gemini/google
-        prompt_template:
-        - id: 34ff1ef2-c920-4b69-8b42-2c96cd722d4c
-          role: system
-          text: '根据{{#1773826070652.output#}}提取关键字
-
-            注意： 严禁任何多余的开场白，直接输出结果。不知道怎么精简就直接原话输出'
-        - id: c18df276-1804-4133-929a-dda227017a97
-          role: user
-          text: 请根据上下文提取关键字
-        selected: false
-        title: LLM 13
-        type: llm
-        vision:
-          enabled: false
-      height: 87
-      id: '1774251512057'
-      position:
-        x: 2146.5881515521314
-        y: 860.9022713553966
-      positionAbsolute:
-        x: 2146.5881515521314
-        y: 860.9022713553966
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        dataset_ids:
-        - dxNTUTyNrMXxNHczjkYEIoXDDwgnVg50WR04Ajerule5QkqjAcAg5r1GeGG3x7Sb
-        multiple_retrieval_config:
-          reranking_enable: false
-          reranking_mode: reranking_model
-          top_k: 4
-        query_attachment_selector: []
-        query_variable_selector:
-        - '1774251512057'
-        - text
-        retrieval_mode: multiple
-        selected: true
-        title: 知识检索
-        type: knowledge-retrieval
-      height: 89
-      id: '1774253957657'
-      position:
-        x: 2468
-        y: 816.5828037833924
-      positionAbsolute:
-        x: 2468
-        y: 816.5828037833924
-      selected: true
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        dataset_ids:
-        - PmJMkOam/wMbIzcWUnJya9txIOOENCbwfnW0ygBA93CewyNFkMpehM29zGI9Ya6f
-        multiple_retrieval_config:
-          reranking_enable: false
-          reranking_mode: reranking_model
-          top_k: 4
-        query_attachment_selector: []
-        query_variable_selector:
-        - '1774251512057'
-        - text
-        retrieval_mode: multiple
-        selected: false
-        title: 知识检索 2
-        type: knowledge-retrieval
-      height: 89
-      id: '1774253964952'
-      position:
-        x: 2468
-        y: 942.5828037833924
-      positionAbsolute:
-        x: 2468
-        y: 942.5828037833924
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        context:
-          enabled: false
-          variable_selector: []
-        model:
-          completion_params:
-            temperature: 0.7
-          mode: chat
-          name: gemini-2.5-flash
-          provider: langgenius/gemini/google
-        prompt_template:
-        - id: 83e6b77a-eca5-4a6b-92d9-7172941a7bd9
-          role: system
-          text: '对信息进行精简，如果没有就标记没有
-
-            注意： 严禁任何多余的开场白，直接输出结果。'
-        - id: 2eb11321-6fc7-4112-9aa7-d73147e21f1d
-          role: user
-          text: 对信息进行精简如果没有就标记没有
-        selected: false
-        title: 输入记忆
-        type: llm
-        vision:
-          enabled: false
-      height: 87
-      id: '1774254739188'
-      position:
-        x: 2769
-        y: 942.5828037833924
-      positionAbsolute:
-        x: 2769
-        y: 942.5828037833924
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        context:
-          enabled: false
-          variable_selector: []
-        model:
-          completion_params:
-            temperature: 0.7
-          mode: chat
-          name: gemini-2.5-flash
-          provider: langgenius/gemini/google
-        prompt_template:
-        - id: 1e02be03-f9df-4225-a36d-a884583d3310
-          role: system
-          text: '对信息进行精简如果没有就标记没有
-
-            注意： 严禁任何多余的开场白，直接输出结果。'
-        - id: 28a8a96a-4e69-406a-9e81-c53f9f04f1c5
-          role: user
-          text: 对信息进行精简如果没有就标记没有
-        selected: false
-        title: 输出记忆
-        type: llm
-        vision:
-          enabled: false
-      height: 87
-      id: '1774254749737'
-      position:
-        x: 2769
-        y: 816.5828037833924
-      positionAbsolute:
-        x: 2769
-        y: 816.5828037833924
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        authorization:
-          config: null
-          type: no-auth
-        body:
-          data:
-          - id: key-value-175
-            key: ''
-            type: text
-            value: '{
-
-              "blob_type":"chat","blob_data":{"messages":[{"role":"user","content":"{{#sys.user_id#}}{{#1773824440593.text#}}"}]
-
-              }}'
-          type: json
-        headers: 'Authorization:api
-
-          Content-Type:application/json'
-        method: post
-        params: ''
-        retry_config:
-          max_retries: 3
-          retry_enabled: true
-          retry_interval: 100
-        selected: false
-        ssl_verify: true
-        timeout:
-          max_connect_timeout: 0
-          max_read_timeout: 0
-          max_write_timeout: 0
-        title: HTTP 请求 2
-        type: http-request
-        url: https://api.dify.ai/v1/datasets/{dataset_id}/documents
-        variables: []
-      height: 136
-      id: '1774320362610'
-      position:
-        x: 4975
-        y: 1080.2716601327206
-      positionAbsolute:
-        x: 4975
-        y: 1080.2716601327206
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        selected: false
-        template: "{% if in %}【输入记忆 (IN)】: {{ in }}{% endif %}\r\n{% if out %}【输出记忆\
-          \ (OUT)】: {{ out }}{% endif %}\r\n\r\n{# 如果你想强行指定某个必选标记，可以直接写在外面 #}\r\n\
-          ---\r\nKMMS_AGGREGATOR_STATUS: COMPLETED"
-        title: 模板转换 3
-        type: template-transform
-        variables:
-        - value_selector:
-          - '1774254739188'
-          - text
-          value_type: string
-          variable: in
-        - value_selector:
-          - '1774254749737'
-          - text
-          value_type: string
-          variable: out
-      height: 51
-      id: '1774321330756'
-      position:
-        x: 3209.3566336776103
-        y: 718.7592700687727
-      positionAbsolute:
-        x: 3209.3566336776103
-        y: 718.7592700687727
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        context:
-          enabled: false
-          variable_selector: []
-        model:
-          completion_params:
-            temperature: 0.7
-          mode: chat
-          name: gemini-2.5-flash
-          provider: langgenius/gemini/google
-        prompt_template:
-        - id: af7b0972-c1e5-435a-91a4-df37a2c13c8a
-          role: system
-          text: '分析用户的状态，若没有则输出没有
-
-            注意： 严禁任何多余的开场白，直接输出结果。'
-        - id: ed5fcfbf-fa94-47f6-8638-dc077da22919
-          role: user
-          text: 分析用户的状态，若没有则输出没有
-        selected: false
-        title: LLM 17
-        type: llm
-        vision:
-          enabled: false
-      height: 87
-      id: '1774321979236'
-      position:
-        x: 3301.663125327536
-        y: 1037.3450066283845
-      positionAbsolute:
-        x: 3301.663125327536
-        y: 1037.3450066283845
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        selected: false
-        template: '{{ arg1 or text or text1 or text2 or text3 or text4 or text5 }}'
-        title: 模板转换 4
-        type: template-transform
-        variables:
-        - value_selector:
-          - '1773853966400'
-          - output
-          value_type: string
-          variable: text1
-        - value_selector:
-          - '1774321330756'
-          - output
-          value_type: string
-          variable: text2
-      height: 51
-      id: '1774322022795'
-      position:
-        x: 3427.183828543654
-        y: 592.8424963981315
-      positionAbsolute:
-        x: 3427.183828543654
-        y: 592.8424963981315
+        x: 322.95118862003244
+        y: 335.8992418584964
       selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
       width: 241
     viewport:
-      x: -1238.139491828134
-      y: -266.0929527546476
-      zoom: 0.7348673021117865
+      x: -341.0327213069936
+      y: 21.430755638544042
+      zoom: 0.5400298988271883
   rag_pipeline_variables: []
