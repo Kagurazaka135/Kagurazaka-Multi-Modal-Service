@@ -2426,7 +2426,7 @@ workflow:
           max_retries: 3
           retry_enabled: true
           retry_interval: 100
-        selected: true
+        selected: false
         ssl_verify: true
         timeout:
           max_connect_timeout: 0
@@ -2444,7 +2444,7 @@ workflow:
       positionAbsolute:
         x: 4975
         y: 1080.2716601327206
-      selected: true
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -2546,8 +2546,216 @@ workflow:
       targetPosition: left
       type: custom
       width: 241
+    - data:
+        author: 漫不经心的干饭人
+        desc: ''
+        height: 88
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"如果这里能根据输入动态的选择llm就好了，至于为啥不选择迭代，因为迭代只要这个环节里出现一点问题就整个卡在这了，这样整至少多个东西崩一个还能传下去","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1774544686218'
+      position:
+        x: 1064.4814192904792
+        y: -22.695475936270185
+      positionAbsolute:
+        x: 1064.4814192904792
+        y: -22.695475936270185
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 240
+    - data:
+        author: 漫不经心的干饭人
+        desc: ''
+        height: 88
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"不过我在想这里判断是否无用有点严格了","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1774544940614'
+      position:
+        x: 1421.1392024734714
+        y: 9.682801830240495
+      positionAbsolute:
+        x: 1421.1392024734714
+        y: 9.682801830240495
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 240
+    - data:
+        author: 漫不经心的干饭人
+        desc: ''
+        height: 88
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"一个问题很多时候会分成很多目的，如果能分开就好了","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1774544973046'
+      position:
+        x: 2140.3166627867154
+        y: 149.16376622401066
+      positionAbsolute:
+        x: 2140.3166627867154
+        y: 149.16376622401066
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 240
+    - data:
+        author: 漫不经心的干饭人
+        desc: ''
+        height: 88
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"别问为啥这一堆llm写的东西一样，我还没想好怎么优化路径","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1774545050062'
+      position:
+        x: 2854.050963513861
+        y: 56.63005326033877
+      positionAbsolute:
+        x: 2854.050963513861
+        y: 56.63005326033877
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 240
+    - data:
+        author: 漫不经心的干饭人
+        desc: ''
+        height: 88
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"而且为啥问题分类器不知道分哪一类的时候，连猜一个都不愿意啊","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1774545096823'
+      position:
+        x: 2185.2227293720266
+        y: 577.8125836292554
+      positionAbsolute:
+        x: 2185.2227293720266
+        y: 577.8125836292554
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 240
+    - data:
+        author: 漫不经心的干饭人
+        desc: ''
+        height: 88
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"文档应该不会出现有人塞垃圾文档把，至于音频和视频需不需要判定我也在想，毕竟图片有表情包这玩意","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1774545136774'
+      position:
+        x: 1195.24807965039
+        y: 811.8684458314845
+      positionAbsolute:
+        x: 1195.24807965039
+        y: 811.8684458314845
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 240
+    - data:
+        author: 漫不经心的干饭人
+        desc: ''
+        height: 88
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"我想的是这里llm的输出和用户的输入分开存，这样应该就并不会出现llm搞混到底这个谁说的了，原本还想的用时间码来保证记忆的耦合，再来个衰减的算法防止一次性筛一堆出来。还可以在记忆里单独来个llm来分析用户的喜好，塞进一个常用的库，并且能自己检查历史记录里有没有前后矛盾的情况存在","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1774545229175'
+      position:
+        x: 2545.832051951042
+        y: 1053.4086524645986
+      positionAbsolute:
+        x: 2545.832051951042
+        y: 1053.4086524645986
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 240
+    - data:
+        author: 漫不经心的干饭人
+        desc: ''
+        height: 88
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"这样处理的llm其实没有记忆，也就是说应该不会出现长文本的问题，和被输入带走（就是现阶段容易爆）","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1774545433770'
+      position:
+        x: 3636.505154015498
+        y: 351.9214608061742
+      positionAbsolute:
+        x: 3636.505154015498
+        y: 351.9214608061742
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 240
+    - data:
+        author: 漫不经心的干饭人
+        desc: ''
+        height: 88
+        selected: true
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"人格也没有记忆，也只能看到你的状态和上一个llm的输出，应该也不会出现人格稀释的情况","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1774545511367'
+      position:
+        x: 3967.1770988709727
+        y: 498.88676963082946
+      positionAbsolute:
+        x: 3967.1770988709727
+        y: 498.88676963082946
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 240
     viewport:
-      x: -4033.9475851907255
-      y: -322.7698171295456
-      zoom: 1.0000000979313692
+      x: -5193.692836066169
+      y: -382.2265216879608
+      zoom: 1.469734604223573
   rag_pipeline_variables: []
