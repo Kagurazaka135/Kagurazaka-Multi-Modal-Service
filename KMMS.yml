@@ -10,7 +10,7 @@ dependencies:
 - current_identifier: null
   type: marketplace
   value:
-    marketplace_plugin_unique_identifier: langgenius/gemini:0.7.19@8eada8d6c655509364283527db67e47a4603021cda289f571af10e217459cf49
+    marketplace_plugin_unique_identifier: langgenius/gemini:0.7.20@de0063a630a6d1b2c025fb84f3462ba5151fb60618309cd595c3f4711b1df847
     version: null
 - current_identifier: null
   type: marketplace
@@ -20,12 +20,12 @@ dependencies:
 - current_identifier: null
   type: marketplace
   value:
-    marketplace_plugin_unique_identifier: langgenius/openai:0.3.2@d70fb969e7c79719bee96573a8f4c9dc4ffd984f4171b9184cc3869c886af45d
+    marketplace_plugin_unique_identifier: langgenius/openai:0.3.4@3345b596ee5117d9304097feaee866f05ffaf0d76a790fb07acd8b99f6c87cb3
     version: null
 - current_identifier: null
   type: marketplace
   value:
-    marketplace_plugin_unique_identifier: langgenius/x:0.0.16@24e7c6fd95cb658523711fe061d5b2d3abd97071c62e387342e5219bc9a7ff25
+    marketplace_plugin_unique_identifier: langgenius/x:0.0.17@ddc2e2f0bb86581516bbd04ea0047d8079066866aed87f6e54acd2e9054950c4
     version: null
 kind: app
 version: 0.6.0
@@ -180,42 +180,6 @@ workflow:
       type: custom
       zIndex: 0
     - data:
-        isInLoop: false
-        sourceType: if-else
-        targetType: template-transform
-      id: 1773823587147-false-1773826070652-target
-      selected: false
-      source: '1773823587147'
-      sourceHandle: 'false'
-      target: '1773826070652'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: template-transform
-        targetType: question-classifier
-      id: 1773826070652-source-1773821052563-target
-      selected: false
-      source: '1773826070652'
-      sourceHandle: source
-      target: '1773821052563'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
-        targetType: template-transform
-      id: 1773853679116-false-1773826070652-target
-      selected: false
-      source: '1773853679116'
-      sourceHandle: 'false'
-      target: '1773826070652'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
         isInIteration: false
         isInLoop: false
         sourceType: if-else
@@ -255,18 +219,6 @@ workflow:
       zIndex: 0
     - data:
         isInLoop: false
-        sourceType: if-else
-        targetType: template-transform
-      id: 17739692604691-false-1773826070652-target
-      selected: false
-      source: '17739692604691'
-      sourceHandle: 'false'
-      target: '1773826070652'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
         sourceType: llm
         targetType: if-else
       id: 17739692973670-source-17739693114650-target
@@ -274,18 +226,6 @@ workflow:
       source: '17739692973670'
       sourceHandle: source
       target: '17739693114650'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
-        targetType: template-transform
-      id: 17739693114650-false-1773826070652-target
-      selected: false
-      source: '17739693114650'
-      sourceHandle: 'false'
-      target: '1773826070652'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -299,18 +239,6 @@ workflow:
       source: '1773546607180'
       sourceHandle: source
       target: '1773996128752'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
-        targetType: template-transform
-      id: 1773996128752-true-1773826070652-target
-      selected: false
-      source: '1773996128752'
-      sourceHandle: 'true'
-      target: '1773826070652'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -501,18 +429,6 @@ workflow:
       type: custom
       zIndex: 0
     - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1774197621044-source-1773826070652-target
-      selected: false
-      source: '1774197621044'
-      sourceHandle: source
-      target: '1773826070652'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
         isInIteration: false
         isInLoop: false
         sourceType: question-classifier
@@ -522,19 +438,6 @@ workflow:
       source: '1773821052563'
       sourceHandle: '1774199075352'
       target: '1774199089088'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: template-transform
-        targetType: llm
-      id: 1773826070652-source-1774251512057-target
-      selected: false
-      source: '1773826070652'
-      sourceHandle: source
-      target: '1774251512057'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -591,91 +494,6 @@ workflow:
       type: custom
       zIndex: 0
     - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1773825097535-source-1773853966400-target
-      selected: false
-      source: '1773825097535'
-      sourceHandle: source
-      target: '1773853966400'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1773825251127-source-1773853966400-target
-      selected: false
-      source: '1773825251127'
-      sourceHandle: source
-      target: '1773853966400'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1773825257806-source-1773853966400-target
-      selected: false
-      source: '1773825257806'
-      sourceHandle: source
-      target: '1773853966400'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1773825262447-source-1773853966400-target
-      selected: false
-      source: '1773825262447'
-      sourceHandle: source
-      target: '1773853966400'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1774199089088-source-1773853966400-target
-      selected: false
-      source: '1774199089088'
-      sourceHandle: source
-      target: '1773853966400'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1774254739188-source-1774321330756-target
-      selected: false
-      source: '1774254739188'
-      sourceHandle: source
-      target: '1774321330756'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: llm
-        targetType: template-transform
-      id: 1774254749737-source-1774321330756-target
-      selected: false
-      source: '1774254749737'
-      sourceHandle: source
-      target: '1774321330756'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
         isInIteration: false
         isInLoop: false
         sourceType: llm
@@ -702,42 +520,6 @@ workflow:
       zIndex: 0
     - data:
         isInLoop: false
-        sourceType: template-transform
-        targetType: template-transform
-      id: 1774321330756-source-1774322022795-target
-      selected: false
-      source: '1774321330756'
-      sourceHandle: source
-      target: '1774322022795'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: template-transform
-        targetType: template-transform
-      id: 1773853966400-source-1774322022795-target
-      selected: false
-      source: '1773853966400'
-      sourceHandle: source
-      target: '1774322022795'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: template-transform
-        targetType: llm
-      id: 1774322022795-source-1773853978087-target
-      selected: false
-      source: '1774322022795'
-      sourceHandle: source
-      target: '1773853978087'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
         sourceType: llm
         targetType: knowledge-retrieval
       id: 1774251512057-source-1774253964952-target
@@ -750,13 +532,202 @@ workflow:
       zIndex: 0
     - data:
         isInLoop: false
-        sourceType: start
-        targetType: http-request
-      id: 1773546607180-source-1774250548194-target
-      selected: false
-      source: '1773546607180'
+        sourceType: if-else
+        targetType: variable-aggregator
+      id: 1773823587147-false-1775195494118-target
+      source: '1773823587147'
+      sourceHandle: 'false'
+      target: '1775195494118'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: variable-aggregator
+      id: 1773996128752-true-1775195494118-target
+      source: '1773996128752'
+      sourceHandle: 'true'
+      target: '1775195494118'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: variable-aggregator
+      id: 1773853679116-false-1775195494118-target
+      source: '1773853679116'
+      sourceHandle: 'false'
+      target: '1775195494118'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: variable-aggregator
+      id: 17739692604691-false-1775195494118-target
+      source: '17739692604691'
+      sourceHandle: 'false'
+      target: '1775195494118'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: variable-aggregator
+      id: 17739693114650-false-1775195494118-target
+      source: '17739693114650'
+      sourceHandle: 'false'
+      target: '1775195494118'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: variable-aggregator
+      id: 1774197621044-source-1775195494118-target
+      source: '1774197621044'
       sourceHandle: source
-      target: '1774250548194'
+      target: '1775195494118'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: variable-aggregator
+        targetType: question-classifier
+      id: 1775195494118-source-1773821052563-target
+      source: '1775195494118'
+      sourceHandle: source
+      target: '1773821052563'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: variable-aggregator
+        targetType: llm
+      id: 1775195494118-source-1774251512057-target
+      source: '1775195494118'
+      sourceHandle: source
+      target: '1774251512057'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: variable-aggregator
+      id: 1774254739188-source-1775195877410-target
+      source: '1774254739188'
+      sourceHandle: source
+      target: '1775195877410'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: variable-aggregator
+      id: 1774254749737-source-1775195877410-target
+      source: '1774254749737'
+      sourceHandle: source
+      target: '1775195877410'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: variable-aggregator
+      id: 1773825097535-source-1775195911738-target
+      source: '1773825097535'
+      sourceHandle: source
+      target: '1775195911738'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: variable-aggregator
+      id: 1773825251127-source-1775195911738-target
+      source: '1773825251127'
+      sourceHandle: source
+      target: '1775195911738'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: variable-aggregator
+      id: 1773825257806-source-1775195911738-target
+      source: '1773825257806'
+      sourceHandle: source
+      target: '1775195911738'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: variable-aggregator
+      id: 1773825262447-source-1775195911738-target
+      source: '1773825262447'
+      sourceHandle: source
+      target: '1775195911738'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: variable-aggregator
+      id: 1774199089088-source-1775195911738-target
+      source: '1774199089088'
+      sourceHandle: source
+      target: '1775195911738'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: variable-aggregator
+        targetType: variable-aggregator
+      id: 1775195911738-source-1775195961921-target
+      source: '1775195911738'
+      sourceHandle: source
+      target: '1775195961921'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: variable-aggregator
+        targetType: variable-aggregator
+      id: 1775195877410-source-1775195961921-target
+      source: '1775195877410'
+      sourceHandle: source
+      target: '1775195961921'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: variable-aggregator
+        targetType: llm
+      id: 1775195961921-source-1773853978087-target
+      source: '1775195961921'
+      sourceHandle: source
+      target: '1773853978087'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -826,7 +797,7 @@ workflow:
           name: gemini-2.5-flash
           provider: langgenius/gemini/google
         query_variable_selector:
-        - '1773826070652'
+        - '1775195494118'
         - output
         selected: false
         title: 问题分类器
@@ -1043,9 +1014,9 @@ workflow:
           role: system
           text: '你是一个图片意图分析助手。请分析用户上传的图片：
 
-            {{#1773997963335.result#}}如果图片是表情包、纯色图、模糊不清的废图、或与文字无关的装饰性图片，必须仅输出：useless。
+            {{#1773997963335.result#}}如果图片是表情包、纯色图、模糊不清的废图、或与文字{{#1773546607180.input_text#}}无关的装饰性图片，必须仅输出：useless。
 
-            如果图片包含具体信息（如：相机/镜头照片、报错截图、文档、摄影作品），请详细描述图片内容，
+            如果图片包含具体信息（如：相机/镜头照片、报错截图、文档、摄影作品），请用json描述图片内容，
 
             如果用户没有上传图片，请输出：no_image。
 
@@ -1189,7 +1160,7 @@ workflow:
         prompt_template:
         - id: d9ed4eb5-2a42-4d85-bb75-15050f3f3e08
           role: system
-          text: 根据输入写一段话
+          text: 根据输入写一段话以json输出
         selected: false
         title: LLM 4
         type: llm
@@ -1226,7 +1197,7 @@ workflow:
         prompt_template:
         - id: 9438b0fd-b56a-453b-9bd7-d256c51b56b4
           role: system
-          text: 你是一个绘画专家根据{{#1773826070652.output#}}写一段话或者画一幅画
+          text: 你是一个绘画专家根据{{#1775195494118.output#}}写一段话或者画一幅画以json输出
         selected: false
         title: LLM 5
         type: llm
@@ -1258,7 +1229,7 @@ workflow:
         prompt_template:
         - id: d6e598a2-f735-4971-b3a0-791b46a5fcef
           role: system
-          text: 根据{{#1773826070652.output#}}写一段话
+          text: 根据{{#1775195494118.output#}}写一段话以json输出
         selected: false
         title: LLM 6
         type: llm
@@ -1290,7 +1261,7 @@ workflow:
         prompt_template:
         - id: 2054770b-7d9e-4767-930a-d0b328d9ce0f
           role: system
-          text: 根据{{#1773826070652.output#}}进行聊天
+          text: 根据{{#1775195494118.output#}}进行聊天以json输出
         selected: false
         title: LLM 7
         type: llm
@@ -1304,55 +1275,6 @@ workflow:
       positionAbsolute:
         x: 2863.285714285714
         y: 478.8571428571428
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        selected: false
-        template: '{{ arg1 or text or text1 or text2 or text3 or text4}}'
-        title: 合并
-        type: template-transform
-        variables:
-        - value_selector:
-          - '1773546607180'
-          - input_text
-          value_type: string
-          variable: arg1
-        - value_selector:
-          - '1773823390277'
-          - text
-          value_type: string
-          variable: text
-        - value_selector:
-          - '1774197621044'
-          - text
-          value_type: string
-          variable: text1
-        - value_selector:
-          - '17739692604690'
-          - text
-          value_type: string
-          variable: text2
-        - value_selector:
-          - '17739692973670'
-          - text
-          value_type: string
-          variable: text3
-        - value_selector:
-          - '1773546607180'
-          - input_text
-          value_type: string
-          variable: text4
-      height: 51
-      id: '1773826070652'
-      position:
-        x: 1786
-        y: 379
-      positionAbsolute:
-        x: 1786
-        y: 379
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1534,50 +1456,6 @@ workflow:
       type: custom
       width: 241
     - data:
-        selected: false
-        template: '{{ arg1 or text or text1 or text2 or text3 or text4 or text5 }}'
-        title: 合并本次处理
-        type: template-transform
-        variables:
-        - value_selector:
-          - '1773825257806'
-          - text
-          value_type: string
-          variable: arg1
-        - value_selector:
-          - '1773825097535'
-          - text
-          value_type: string
-          variable: text
-        - value_selector:
-          - '1773825251127'
-          - text
-          value_type: string
-          variable: text1
-        - value_selector:
-          - '1773825262447'
-          - text
-          value_type: string
-          variable: text2
-        - value_selector:
-          - '1774199089088'
-          - text
-          value_type: string
-          variable: text3
-      height: 51
-      id: '1773853966400'
-      position:
-        x: 3215.7062374709326
-        y: 450.5075390638202
-      positionAbsolute:
-        x: 3215.7062374709326
-        y: 450.5075390638202
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
         context:
           enabled: false
           variable_selector: []
@@ -1589,9 +1467,9 @@ workflow:
         prompt_template:
         - id: 7bb5c37b-d2f8-4dac-a018-2e3de8474b65
           role: system
-          text: 请你根据{{#1774322022795.output#}}写一段话如果出现和{{#1773546607180.input_text#}}{{#sys.files#}}不符合的，以{{#sys.files#}}{{#1773546607180.input_text#}}为准
+          text: 请你根据{{#1775195961921.output#}}写一段话如果出现和{{#1773546607180.input_text#}}{{#sys.files#}}不符合的，以{{#sys.files#}}{{#1773546607180.input_text#}}为准
         reasoning_format: tagged
-        selected: false
+        selected: true
         structured_output_enabled: false
         title: 数据处理
         type: llm
@@ -1600,12 +1478,12 @@ workflow:
       height: 87
       id: '1773853978087'
       position:
-        x: 3654.0661358569373
-        y: 456.8571428571428
+        x: 3685.545874362009
+        y: 498.88676963082946
       positionAbsolute:
-        x: 3654.0661358569373
-        y: 456.8571428571428
-      selected: false
+        x: 3685.545874362009
+        y: 498.88676963082946
+      selected: true
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -1673,7 +1551,7 @@ workflow:
 
             如果音频是杂音、或与文字无关的装饰性音频，必须仅输出：useless。
 
-            如果音频包含具体信息（如：相机/镜头照片、报错截图、文档、摄影作品），请将音频转为文字，
+            如果音频包含具体信息，请将音频转为json，
 
             如果用户没有上传图片，请输出：no_voice。
 
@@ -1715,11 +1593,11 @@ workflow:
       height: 147
       id: '17739692604691'
       position:
-        x: 1425
-        y: 343
+        x: 1421.1392024734714
+        y: 344.46973446029045
       positionAbsolute:
-        x: 1425
-        y: 343
+        x: 1421.1392024734714
+        y: 344.46973446029045
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1743,7 +1621,7 @@ workflow:
 
             如果视频是表情包、纯色情视频、模糊不清的废视频、或与文字无关的装饰性视频，必须仅输出：useless。
 
-            如果图片包含具体信息（如：相机/镜头照片、报错截图、文档、摄影作品），请简要描述视频内容，
+            如果图片包含具体信息（如：相机/镜头照片、报错截图、文档、摄影作品），请用json简要描述视频内容，
 
             如果用户没有上传视频，请输出：no_video。
 
@@ -1819,11 +1697,11 @@ workflow:
       height: 123
       id: '1773996128752'
       position:
-        x: 241.18259442781687
-        y: 122.95712715133618
+        x: 201.49976399997422
+        y: 118.54792377046479
       positionAbsolute:
-        x: 241.18259442781687
-        y: 122.95712715133618
+        x: 201.49976399997422
+        y: 118.54792377046479
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2137,7 +2015,7 @@ workflow:
         prompt_template:
         - id: d9fb7371-cd5b-4a91-8f85-0b2911664d4a
           role: system
-          text: 对输入的文本{{#1774196239528.text#}}进行精简，只进行摘要
+          text: 对输入的文本{{#1774196239528.text#}}进行精简，用json描述
         selected: false
         title: 精简文档的内容
         type: llm
@@ -2169,7 +2047,7 @@ workflow:
         prompt_template:
         - id: 7d86f04b-74e2-4e19-8514-d3c0c65758c8
           role: system
-          text: 根据{{#1773826070652.output#}}写一段文字
+          text: 根据{{#1775195494118.output#}}写一段文字以json输出
         selected: false
         title: LLM 12
         type: llm
@@ -2248,9 +2126,9 @@ workflow:
         prompt_template:
         - id: 34ff1ef2-c920-4b69-8b42-2c96cd722d4c
           role: system
-          text: '根据{{#1773826070652.output#}}提取关键字
+          text: '根据{{#1775195494118.output#}}提取关键字
 
-            注意： 严禁任何多余的开场白，直接输出结果。不知道怎么精简就直接原话输出'
+            注意： 严禁任何多余的开场白，直接以json输出。不知道怎么精简就直接原话输出'
         - id: c18df276-1804-4133-929a-dda227017a97
           role: user
           text: 请根据上下文提取关键字
@@ -2343,7 +2221,7 @@ workflow:
           role: system
           text: '对信息进行精简，如果没有就标记没有
 
-            注意： 严禁任何多余的开场白，直接输出结果。'
+            注意： 严禁任何多余的开场白，直接以json输出结果。并标记这是输入记忆'
         - id: 2eb11321-6fc7-4112-9aa7-d73147e21f1d
           role: user
           text: 对信息进行精简如果没有就标记没有
@@ -2380,7 +2258,7 @@ workflow:
           role: system
           text: '对信息进行精简如果没有就标记没有
 
-            注意： 严禁任何多余的开场白，直接输出结果。'
+            注意： 严禁任何多余的开场白，直接以json输出结果。并标记这是输出记忆'
         - id: 28a8a96a-4e69-406a-9e81-c53f9f04f1c5
           role: user
           text: 对信息进行精简如果没有就标记没有
@@ -2450,37 +2328,6 @@ workflow:
       type: custom
       width: 241
     - data:
-        selected: false
-        template: "{% if in %}【输入记忆 (IN)】: {{ in }}{% endif %}\r\n{% if out %}【输出记忆\
-          \ (OUT)】: {{ out }}{% endif %}\r\n\r\n{# 如果你想强行指定某个必选标记，可以直接写在外面 #}\r\n\
-          ---\r\nKMMS_AGGREGATOR_STATUS: COMPLETED"
-        title: 合并记忆
-        type: template-transform
-        variables:
-        - value_selector:
-          - '1774254739188'
-          - text
-          value_type: string
-          variable: in
-        - value_selector:
-          - '1774254749737'
-          - text
-          value_type: string
-          variable: out
-      height: 51
-      id: '1774321330756'
-      position:
-        x: 3209.3566336776103
-        y: 718.7592700687727
-      positionAbsolute:
-        x: 3209.3566336776103
-        y: 718.7592700687727
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
         context:
           enabled: false
           variable_selector: []
@@ -2518,35 +2365,6 @@ workflow:
       type: custom
       width: 241
     - data:
-        selected: false
-        template: '{{ arg1 or text or text1 or text2 or text3 or text4 or text5 }}'
-        title: 合并所有数据
-        type: template-transform
-        variables:
-        - value_selector:
-          - '1773853966400'
-          - output
-          value_type: string
-          variable: text1
-        - value_selector:
-          - '1774321330756'
-          - output
-          value_type: string
-          variable: text2
-      height: 51
-      id: '1774322022795'
-      position:
-        x: 3427.183828543654
-        y: 592.8424963981315
-      positionAbsolute:
-        x: 3427.183828543654
-        y: 592.8424963981315
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
         author: 漫不经心的干饭人
         desc: ''
         height: 88
@@ -2565,7 +2383,7 @@ workflow:
       positionAbsolute:
         x: 1064.4814192904792
         y: -22.695475936270185
-      selected: true
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom-note
@@ -2704,6 +2522,7 @@ workflow:
       positionAbsolute:
         x: 2545.832051951042
         y: 1053.4086524645986
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom-note
@@ -2722,11 +2541,12 @@ workflow:
       height: 88
       id: '1774545433770'
       position:
-        x: 3636.505154015498
-        y: 351.9214608061742
+        x: 3685.545874362009
+        y: 379
       positionAbsolute:
-        x: 3636.505154015498
-        y: 351.9214608061742
+        x: 3685.545874362009
+        y: 379
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom-note
@@ -2735,7 +2555,7 @@ workflow:
         author: 漫不经心的干饭人
         desc: ''
         height: 88
-        selected: true
+        selected: false
         showAuthor: true
         text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"人格也没有记忆，也只能看到你的状态和上一个llm的输出，应该也不会出现人格稀释的情况","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
         theme: blue
@@ -2754,8 +2574,110 @@ workflow:
       targetPosition: left
       type: custom-note
       width: 240
+    - data:
+        output_type: string
+        selected: false
+        title: 变量聚合器
+        type: variable-aggregator
+        variables:
+        - - '1773823390277'
+          - text
+        - - '1773546607180'
+          - input_text
+        - - '17739692604690'
+          - text
+        - - '17739692973670'
+          - text
+        - - '1774197621044'
+          - text
+      height: 213
+      id: '1775195494118'
+      position:
+        x: 1789.9220184683538
+        y: 388.8258433590712
+      positionAbsolute:
+        x: 1789.9220184683538
+        y: 388.8258433590712
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        output_type: string
+        selected: false
+        title: 合并记忆
+        type: variable-aggregator
+        variables:
+        - - '1774254739188'
+          - text
+        - - '1774254749737'
+          - text
+      height: 134
+      id: '1775195877410'
+      position:
+        x: 3142.913078222985
+        y: 779.5236658929535
+      positionAbsolute:
+        x: 3142.913078222985
+        y: 779.5236658929535
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        output_type: string
+        selected: false
+        title: 合并处理结果
+        type: variable-aggregator
+        variables:
+        - - '1773825097535'
+          - text
+        - - '1773825257806'
+          - text
+        - - '1773825251127'
+          - text
+        - - '1773825262447'
+          - text
+        - - '1774199089088'
+          - text
+      height: 213
+      id: '1775195911738'
+      position:
+        x: 3142.913078222985
+        y: 388.8258433590712
+      positionAbsolute:
+        x: 3142.913078222985
+        y: 388.8258433590712
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        output_type: string
+        selected: false
+        title: 合并结果
+        type: variable-aggregator
+        variables:
+        - - '1775195911738'
+          - output
+      height: 108
+      id: '1775195961921'
+      position:
+        x: 3406.1154479599963
+        y: 590.9980117607137
+      positionAbsolute:
+        x: 3406.1154479599963
+        y: 590.9980117607137
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
     viewport:
-      x: -5193.692836066169
-      y: -382.2265216879608
-      zoom: 1.469734604223573
+      x: -1746.2870398973582
+      y: 50.89997139071852
+      zoom: 0.5832645261347128
   rag_pipeline_variables: []
