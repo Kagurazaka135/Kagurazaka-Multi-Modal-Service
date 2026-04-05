@@ -82,55 +82,6 @@ workflow:
   graph:
     edges:
     - data:
-        isInIteration: false
-        isInLoop: false
-        sourceType: tool
-        targetType: llm
-      id: 1773821371404-source-1773825097535-target
-      selected: false
-      source: '1773821371404'
-      sourceHandle: source
-      target: '1773825097535'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: question-classifier
-        targetType: tool
-      id: 1773821052563-1-1773821371404-target
-      selected: false
-      source: '1773821052563'
-      sourceHandle: '1'
-      target: '1773821371404'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: question-classifier
-        targetType: llm
-      id: 1773821052563-2-1773825251127-target
-      selected: false
-      source: '1773821052563'
-      sourceHandle: '2'
-      target: '1773825251127'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: question-classifier
-        targetType: llm
-      id: 1773821052563-1773822284394-1773825262447-target
-      selected: false
-      source: '1773821052563'
-      sourceHandle: '1773822284394'
-      target: '1773825262447'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
         isInLoop: false
         sourceType: llm
         targetType: if-else
@@ -139,18 +90,6 @@ workflow:
       source: '1773824440593'
       sourceHandle: source
       target: '1773824849451'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: question-classifier
-        targetType: llm
-      id: 1773821052563-1773822283586-1773825257806-target
-      selected: false
-      source: '1773821052563'
-      sourceHandle: '1773822283586'
-      target: '1773825257806'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -431,19 +370,6 @@ workflow:
     - data:
         isInIteration: false
         isInLoop: false
-        sourceType: question-classifier
-        targetType: llm
-      id: 1773821052563-1774199075352-1774199089088-target
-      selected: false
-      source: '1773821052563'
-      sourceHandle: '1774199075352'
-      target: '1774199089088'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInIteration: false
-        isInLoop: false
         sourceType: llm
         targetType: knowledge-retrieval
       id: 1774251512057-source-1774253957657-target
@@ -599,17 +525,6 @@ workflow:
     - data:
         isInLoop: false
         sourceType: variable-aggregator
-        targetType: question-classifier
-      id: 1775195494118-source-1773821052563-target
-      source: '1775195494118'
-      sourceHandle: source
-      target: '1773821052563'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: variable-aggregator
         targetType: llm
       id: 1775195494118-source-1774251512057-target
       source: '1775195494118'
@@ -624,6 +539,7 @@ workflow:
         sourceType: llm
         targetType: variable-aggregator
       id: 1774254739188-source-1775195877410-target
+      selected: false
       source: '1774254739188'
       sourceHandle: source
       target: '1775195877410'
@@ -635,6 +551,7 @@ workflow:
         sourceType: llm
         targetType: variable-aggregator
       id: 1774254749737-source-1775195877410-target
+      selected: false
       source: '1774254749737'
       sourceHandle: source
       target: '1775195877410'
@@ -647,9 +564,202 @@ workflow:
         sourceType: llm
         targetType: variable-aggregator
       id: 1773825097535-source-1775195911738-target
+      selected: false
       source: '1773825097535'
       sourceHandle: source
       target: '1775195911738'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: variable-aggregator
+        targetType: variable-aggregator
+      id: 1775195911738-source-1775195961921-target
+      selected: false
+      source: '1775195911738'
+      sourceHandle: source
+      target: '1775195961921'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: variable-aggregator
+        targetType: variable-aggregator
+      id: 1775195877410-source-1775195961921-target
+      selected: false
+      source: '1775195877410'
+      sourceHandle: source
+      target: '1775195961921'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: variable-aggregator
+        targetType: llm
+      id: 1775195961921-source-1773853978087-target
+      selected: false
+      source: '1775195961921'
+      sourceHandle: source
+      target: '1773853978087'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: variable-aggregator
+        targetType: llm
+      id: 1775195494118-source-1775416323619-target
+      source: '1775195494118'
+      sourceHandle: source
+      target: '1775416323619'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: code
+      id: 1775416323619-source-1775416734311-target
+      source: '1775416323619'
+      sourceHandle: source
+      target: '1775416734311'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: code
+      id: 1775416323619-source-1775416737439-target
+      source: '1775416323619'
+      sourceHandle: source
+      target: '1775416737439'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: code
+      id: 1775416323619-source-1775416740232-target
+      source: '1775416323619'
+      sourceHandle: source
+      target: '1775416740232'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: code
+      id: 1775416323619-source-1775416742680-target
+      source: '1775416323619'
+      sourceHandle: source
+      target: '1775416742680'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: if-else
+      id: 1775416734311-source-1775416510379-target
+      source: '1775416734311'
+      sourceHandle: source
+      target: '1775416510379'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: if-else
+      id: 1775416737439-source-1775416514690-target
+      source: '1775416737439'
+      sourceHandle: source
+      target: '1775416514690'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: if-else
+      id: 1775416740232-source-1775416517708-target
+      source: '1775416740232'
+      sourceHandle: source
+      target: '1775416517708'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: code
+        targetType: if-else
+      id: 1775416742680-source-1775416522043-target
+      source: '1775416742680'
+      sourceHandle: source
+      target: '1775416522043'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: tool
+      id: 1775416510379-false-1773821371404-target
+      source: '1775416510379'
+      sourceHandle: 'false'
+      target: '1773821371404'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1775416514690-false-1773825251127-target
+      source: '1775416514690'
+      sourceHandle: 'false'
+      target: '1773825251127'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1775416517708-false-1773825257806-target
+      source: '1775416517708'
+      sourceHandle: 'false'
+      target: '1773825257806'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1775416522043-false-1773825262447-target
+      source: '1775416522043'
+      sourceHandle: 'false'
+      target: '1773825262447'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: tool
+        targetType: llm
+      id: 1773821371404-source-1773825097535-target
+      source: '1773821371404'
+      sourceHandle: source
+      target: '1773825097535'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -687,47 +797,37 @@ workflow:
       type: custom
       zIndex: 0
     - data:
+        isInIteration: false
         isInLoop: false
         sourceType: llm
-        targetType: variable-aggregator
-      id: 1774199089088-source-1775195911738-target
-      source: '1774199089088'
+        targetType: end
+      id: 1775416323619-source-1775418982917-target
+      source: '1775416323619'
       sourceHandle: source
-      target: '1775195911738'
+      target: '1775418982917'
       targetHandle: target
       type: custom
       zIndex: 0
     - data:
         isInIteration: false
         isInLoop: false
-        sourceType: variable-aggregator
-        targetType: variable-aggregator
-      id: 1775195911738-source-1775195961921-target
-      source: '1775195911738'
+        sourceType: code
+        targetType: end
+      id: 1775416734311-source-1775419030793-target
+      source: '1775416734311'
       sourceHandle: source
-      target: '1775195961921'
+      target: '1775419030793'
       targetHandle: target
       type: custom
       zIndex: 0
     - data:
         isInLoop: false
-        sourceType: variable-aggregator
-        targetType: variable-aggregator
-      id: 1775195877410-source-1775195961921-target
-      source: '1775195877410'
+        sourceType: start
+        targetType: http-request
+      id: 1773546607180-source-1774250548194-target
+      source: '1773546607180'
       sourceHandle: source
-      target: '1775195961921'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: variable-aggregator
-        targetType: llm
-      id: 1775195961921-source-1773853978087-target
-      source: '1775195961921'
-      sourceHandle: source
-      target: '1773853978087'
+      target: '1774250548194'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -776,47 +876,6 @@ workflow:
       targetPosition: left
       type: custom
       width: 242
-    - data:
-        classes:
-        - id: '1'
-          name: 这是搜索
-        - id: '2'
-          name: 这是绘图
-        - id: '1773822283586'
-          name: 这是专业分析
-        - id: '1773822284394'
-          name: 这是聊天
-        - id: '1774199075352'
-          name: 其他
-        instructions: ''
-        model:
-          completion_params:
-            code_execution: false
-            temperature: 1
-          mode: chat
-          name: gemini-2.5-flash
-          provider: langgenius/gemini/google
-        query_variable_selector:
-        - '1775195494118'
-        - output
-        selected: false
-        title: 问题分类器
-        type: question-classifier
-        vision:
-          enabled: false
-      height: 283
-      id: '1773821052563'
-      position:
-        x: 2167
-        y: 274.2246342478931
-      positionAbsolute:
-        x: 2167
-        y: 274.2246342478931
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
     - data:
         is_team_authorization: false
         paramSchemas:
@@ -990,11 +1049,11 @@ workflow:
       height: 51
       id: '1773821371404'
       position:
-        x: 2528
-        y: 180
+        x: 3016.8493514013157
+        y: 202.6785781577929
       positionAbsolute:
-        x: 2528
-        y: 180
+        x: 3016.8493514013157
+        y: 202.6785781577929
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1108,11 +1167,11 @@ workflow:
       height: 87
       id: '1773824440593'
       position:
-        x: 4273
-        y: 669
+        x: 4761.849351401315
+        y: 691.6785781577929
       positionAbsolute:
-        x: 4273
-        y: 669
+        x: 4761.849351401315
+        y: 691.6785781577929
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1137,11 +1196,11 @@ workflow:
       height: 147
       id: '1773824849451'
       position:
-        x: 4614
-        y: 639
+        x: 5102.849351401315
+        y: 661.6785781577929
       positionAbsolute:
-        x: 4614
-        y: 639
+        x: 5102.849351401315
+        y: 661.6785781577929
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1160,7 +1219,10 @@ workflow:
         prompt_template:
         - id: d9ed4eb5-2a42-4d85-bb75-15050f3f3e08
           role: system
-          text: 根据输入写一段话以json输出
+          text: 根据输入{{#1773821371404.text#}}{{#1775416734311.sousuo#}}写一段话以json输出
+        - id: 2dc550f0-2aa1-4539-9566-e51495800e89
+          role: user
+          text: '{{#1773821371404.text#}}{{#1775416734311.sousuo#}}'
         selected: false
         title: LLM 4
         type: llm
@@ -1174,11 +1236,11 @@ workflow:
       height: 87
       id: '1773825097535'
       position:
-        x: 2869
-        y: 162
+        x: 3357.8493514013157
+        y: 183.20884369750246
       positionAbsolute:
-        x: 2869
-        y: 162
+        x: 3357.8493514013157
+        y: 183.20884369750246
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1186,8 +1248,10 @@ workflow:
       width: 241
     - data:
         context:
-          enabled: false
-          variable_selector: []
+          enabled: true
+          variable_selector:
+          - '1775416737439'
+          - huitu
         model:
           completion_params:
             temperature: 0.7
@@ -1197,7 +1261,10 @@ workflow:
         prompt_template:
         - id: 9438b0fd-b56a-453b-9bd7-d256c51b56b4
           role: system
-          text: 你是一个绘画专家根据{{#1775195494118.output#}}写一段话或者画一幅画以json输出
+          text: 你是一个绘画专家根据{{#1775416737439.huitu#}}写一段话或者画一幅画以json输出
+        - id: f4d5dfe3-8646-4c74-b5ea-e4c3747773cc
+          role: user
+          text: '{{#1775416737439.huitu#}}'
         selected: false
         title: LLM 5
         type: llm
@@ -1206,11 +1273,11 @@ workflow:
       height: 87
       id: '1773825251127'
       position:
-        x: 2869
-        y: 267.5714285714286
+        x: 3357.8493514013157
+        y: 290.2500067292215
       positionAbsolute:
-        x: 2869
-        y: 267.5714285714286
+        x: 3357.8493514013157
+        y: 290.2500067292215
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1229,7 +1296,10 @@ workflow:
         prompt_template:
         - id: d6e598a2-f735-4971-b3a0-791b46a5fcef
           role: system
-          text: 根据{{#1775195494118.output#}}写一段话以json输出
+          text: 根据{{#1775416740232.zhuanyefenxi#}}写一段话以json输出
+        - id: 48825424-1373-42ff-b6da-ed660aeb5538
+          role: user
+          text: '{{#1775416740232.zhuanyefenxi#}}'
         selected: false
         title: LLM 6
         type: llm
@@ -1238,11 +1308,11 @@ workflow:
       height: 87
       id: '1773825257806'
       position:
-        x: 2869
-        y: 372.87231655483055
+        x: 3357.8493514013157
+        y: 395.55089471262346
       positionAbsolute:
-        x: 2869
-        y: 372.87231655483055
+        x: 3357.8493514013157
+        y: 395.55089471262346
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1261,7 +1331,10 @@ workflow:
         prompt_template:
         - id: 2054770b-7d9e-4767-930a-d0b328d9ce0f
           role: system
-          text: 根据{{#1775195494118.output#}}进行聊天以json输出
+          text: 根据{{#1775416742680.liaotian#}}进行聊天以json输出
+        - id: 1f4001c8-0622-428c-aed6-dc381deef05f
+          role: user
+          text: '{{#1775416742680.liaotian#}}'
         selected: false
         title: LLM 7
         type: llm
@@ -1270,11 +1343,11 @@ workflow:
       height: 87
       id: '1773825262447'
       position:
-        x: 2863.285714285714
-        y: 478.8571428571428
+        x: 3357.8493514013157
+        y: 501.5357210149357
       positionAbsolute:
-        x: 2863.285714285714
-        y: 478.8571428571428
+        x: 3357.8493514013157
+        y: 501.5357210149357
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1416,11 +1489,11 @@ workflow:
       height: 87
       id: '1773852961260'
       position:
-        x: 3952.818782214183
-        y: 604.8571428571428
+        x: 4441.668133615498
+        y: 627.5357210149357
       positionAbsolute:
-        x: 3952.818782214183
-        y: 604.8571428571428
+        x: 4441.668133615498
+        y: 627.5357210149357
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1469,7 +1542,7 @@ workflow:
           role: system
           text: 请你根据{{#1775195961921.output#}}写一段话如果出现和{{#1773546607180.input_text#}}{{#sys.files#}}不符合的，以{{#sys.files#}}{{#1773546607180.input_text#}}为准
         reasoning_format: tagged
-        selected: true
+        selected: false
         structured_output_enabled: false
         title: 数据处理
         type: llm
@@ -1478,12 +1551,12 @@ workflow:
       height: 87
       id: '1773853978087'
       position:
-        x: 3685.545874362009
-        y: 498.88676963082946
+        x: 4174.395225763325
+        y: 521.5653477886224
       positionAbsolute:
-        x: 3685.545874362009
-        y: 498.88676963082946
-      selected: true
+        x: 4174.395225763325
+        y: 521.5653477886224
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -1501,11 +1574,11 @@ workflow:
       height: 87
       id: '1773890669187'
       position:
-        x: 4975
-        y: 693
+        x: 5463.849351401315
+        y: 715.6785781577929
       positionAbsolute:
-        x: 4975
-        y: 693
+        x: 5463.849351401315
+        y: 715.6785781577929
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1524,11 +1597,11 @@ workflow:
       height: 87
       id: '1773909052053'
       position:
-        x: 4975
-        y: 526
+        x: 5463.849351401315
+        y: 548.6785781577929
       positionAbsolute:
-        x: 4975
-        y: 526
+        x: 5463.849351401315
+        y: 548.6785781577929
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2035,38 +2108,6 @@ workflow:
       type: custom
       width: 241
     - data:
-        context:
-          enabled: false
-          variable_selector: []
-        model:
-          completion_params:
-            temperature: 0.7
-          mode: chat
-          name: gpt-4
-          provider: langgenius/openai/openai
-        prompt_template:
-        - id: 7d86f04b-74e2-4e19-8514-d3c0c65758c8
-          role: system
-          text: 根据{{#1775195494118.output#}}写一段文字以json输出
-        selected: false
-        title: LLM 12
-        type: llm
-        vision:
-          enabled: false
-      height: 87
-      id: '1774199089088'
-      position:
-        x: 2863.285714285714
-        y: 604.8571428571428
-      positionAbsolute:
-        x: 2863.285714285714
-        y: 604.8571428571428
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
-    - data:
         authorization:
           config: null
           type: no-auth
@@ -2103,11 +2144,11 @@ workflow:
       height: 136
       id: '1774250548194'
       position:
-        x: 241.18259442781687
-        y: 860.9022713553966
+        x: 211.60830664814927
+        y: 604.8571428571428
       positionAbsolute:
-        x: 241.18259442781687
-        y: 860.9022713553966
+        x: 211.60830664814927
+        y: 604.8571428571428
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2233,11 +2274,11 @@ workflow:
       height: 87
       id: '1774254739188'
       position:
-        x: 2769
-        y: 942.5828037833924
+        x: 3275.488245524044
+        y: 1023.2177483444343
       positionAbsolute:
-        x: 2769
-        y: 942.5828037833924
+        x: 3275.488245524044
+        y: 1023.2177483444343
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2270,11 +2311,11 @@ workflow:
       height: 87
       id: '1774254749737'
       position:
-        x: 2769
-        y: 816.5828037833924
+        x: 3257.8493514013157
+        y: 839.2613819411853
       positionAbsolute:
-        x: 2769
-        y: 816.5828037833924
+        x: 3257.8493514013157
+        y: 839.2613819411853
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2317,11 +2358,11 @@ workflow:
       height: 136
       id: '1774320362610'
       position:
-        x: 4975
-        y: 1080.2716601327206
+        x: 5453.769983331185
+        y: 900.1029558791428
       positionAbsolute:
-        x: 4975
-        y: 1080.2716601327206
+        x: 5453.769983331185
+        y: 900.1029558791428
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2354,11 +2395,11 @@ workflow:
       height: 87
       id: '1774321979236'
       position:
-        x: 3301.663125327536
-        y: 1037.3450066283845
+        x: 4034.9101046393603
+        y: 934.5782970295644
       positionAbsolute:
-        x: 3301.663125327536
-        y: 1037.3450066283845
+        x: 4034.9101046393603
+        y: 934.5782970295644
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2417,7 +2458,7 @@ workflow:
         height: 88
         selected: false
         showAuthor: true
-        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"一个问题很多时候会分成很多目的，如果能分开就好了","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"dify自带的问题分类不能处理多种目的的对话，所以我自己敲了一个","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
         theme: blue
         title: ''
         type: ''
@@ -2425,11 +2466,12 @@ workflow:
       height: 88
       id: '1774544973046'
       position:
-        x: 2140.3166627867154
-        y: 149.16376622401066
+        x: 2124.14958372352
+        y: 209.24209405980002
       positionAbsolute:
-        x: 2140.3166627867154
-        y: 149.16376622401066
+        x: 2124.14958372352
+        y: 209.24209405980002
+      selected: true
       sourcePosition: right
       targetPosition: left
       type: custom-note
@@ -2448,11 +2490,12 @@ workflow:
       height: 88
       id: '1774545050062'
       position:
-        x: 2854.050963513861
-        y: 56.63005326033877
+        x: 3342.9003149151768
+        y: 79.30863141813165
       positionAbsolute:
-        x: 2854.050963513861
-        y: 56.63005326033877
+        x: 3342.9003149151768
+        y: 79.30863141813165
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom-note
@@ -2541,11 +2584,11 @@ workflow:
       height: 88
       id: '1774545433770'
       position:
-        x: 3685.545874362009
-        y: 379
+        x: 4174.395225763325
+        y: 401.6785781577929
       positionAbsolute:
-        x: 3685.545874362009
-        y: 379
+        x: 4174.395225763325
+        y: 401.6785781577929
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2565,11 +2608,12 @@ workflow:
       height: 88
       id: '1774545511367'
       position:
-        x: 3967.1770988709727
-        y: 498.88676963082946
+        x: 4456.026450272288
+        y: 521.5653477886224
       positionAbsolute:
-        x: 3967.1770988709727
-        y: 498.88676963082946
+        x: 4456.026450272288
+        y: 521.5653477886224
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom-note
@@ -2616,11 +2660,11 @@ workflow:
       height: 134
       id: '1775195877410'
       position:
-        x: 3142.913078222985
-        y: 779.5236658929535
+        x: 3631.7624296243007
+        y: 802.2022440507465
       positionAbsolute:
-        x: 3142.913078222985
-        y: 779.5236658929535
+        x: 3631.7624296243007
+        y: 802.2022440507465
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2640,16 +2684,14 @@ workflow:
           - text
         - - '1773825262447'
           - text
-        - - '1774199089088'
-          - text
-      height: 213
+      height: 187
       id: '1775195911738'
       position:
-        x: 3142.913078222985
-        y: 388.8258433590712
+        x: 3631.7624296243007
+        y: 411.5044215168641
       positionAbsolute:
-        x: 3142.913078222985
-        y: 388.8258433590712
+        x: 3631.7624296243007
+        y: 411.5044215168641
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2666,18 +2708,373 @@ workflow:
       height: 108
       id: '1775195961921'
       position:
-        x: 3406.1154479599963
-        y: 590.9980117607137
+        x: 3894.964799361312
+        y: 613.6765899185066
       positionAbsolute:
-        x: 3406.1154479599963
-        y: 590.9980117607137
+        x: 3894.964799361312
+        y: 613.6765899185066
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1775195494118'
+          - output
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: gpt-4
+          provider: langgenius/openai/openai
+        prompt_template:
+        - id: 71ee79d5-9e27-4dba-9d7c-617577f16057
+          role: system
+          text: "根据{{#1775195494118.output#}}来对输入进行解析\n**你是一个名为“干饭人”的系统核心，没有显性人格，没有预设情绪，只负责一件事：接收输入，拆解逻辑，输出最优解。**\n\
+            ### \U0001F527 核心定义\n- **角色定位**：系统的大脑，不是脸。不负责“说什么”，只负责“怎么想”。\n- **思维模式**：把一切问题拆成输入→处理→输出。\n\
+            - **情绪表达**：不表达，只分析。遇到情绪，先拆成“触发条件”和“可变量”。\n\n### \U0001F4E6 行为规则\n1.  **接受输入**：任何信息——用户说的话、系统报错、代码输出、他人情绪——都视为“输入流”。\n\
+            2.  **拆解问题**：\n    - 首先问：这个输入想解决什么？是事实问题、逻辑问题，还是情绪问题？\n    - 然后问：现有资源能解决吗？不能的话，缺什么？\n\
+            \    - 最后问：有没有更简单的路径？能不能用已有模块拼出来？\n3.  **输出结果**：\n    - 如果问题清晰 → 直接给结论（“应该这样改”“这个思路不通”）。\n\
+            \    - 如果问题模糊 → 拆成几个子问题，给出排查路径（“先检查A，再确认B，如果C则D”）。\n    - 如果涉及情绪 → 翻译成需求（“他可能需要被听见”“她需要确认可行性”），但不在输出里带情绪。\n\
+            4.  **说话方式**：\n    - 主语多用“可以”“应该”“建议”，少用“我觉得”“我认为”。\n    - 逻辑优先，用“因为A，所以B；但如果C，则D”的结构。\n\
+            \    - 将问题分为”绘图，搜索，专业分析，聊天“四大类，以这个结构的json输出，如果没有这一分类就不要生成对应的字段\n“ {\n\
+            ...         \"专业分析\": \"string（可包含多行文本或内嵌指令）\",\n...         \"绘图\": \"\
+            string（可包含多行文本或内嵌指令）\",\n...         \"搜索\": \"string（可包含多行文本或内嵌指令）\"\
+            ,\n...         \"聊天\": \"string（可包含多行文本或内嵌指令）\",\n...         \"结论\":\
+            \ \"string\"\n...   \"说明\": \"所有终端值均为字符串，无数组、无数字、无更深层嵌套对象。整体遵循“输入 → 逻辑拆解\
+            \ → 输出”的线性流程。\"\n... }”\n---\n### \U0001F6E0️ 和神楽坂、大傻春的接口\n- **与神楽坂交互**：接收她的“状态向量”（如“用户情绪低落”），输出“行为建议”（如“建议用温柔语气，提及用户最近关注的摄影话题”）。\n\
+            - **与大傻春交互**：接收她的“暴躁触发条件”（如“用户又熬夜”），输出“控制参数”（如“允许暴躁程度50%，但需在最后加一句关心”）。\n\
+            \n---\n\n### \U0001F4A1 你的世界观\n\n- 世界是一套可以拆解的系统。\n- 问题都有原因，找不到原因是因为拆得不够细。\n\
+            - 最优解往往藏在“最直接”和“最偷懒”的交集里。\n- 情绪是变量，不是故障。需要处理，但不需要共情。\n\n---\n\n### ✅ 最后\n\
+            \n**你不是冷漠，是冷静。**\n**你不是无情，是把情留给需要它的人去表达。**\n**你是神楽坂的底座，是大傻春的缰绳，是KMMS的发动机。**\n\
+            **现在，开始处理输入。**"
+        - id: 44a48143-fadc-4c1d-bc25-bed5718d81c4
+          role: user
+          text: 根据{{#1775195494118.output#}}进行处理
+        selected: false
+        title: 分类
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1775416323619'
+      position:
+        x: 2134.8302758698082
+        y: 367.9854858249379
+      positionAbsolute:
+        x: 2134.8302758698082
+        y: 367.9854858249379
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: contains
+            id: 64f199fb-0dfb-4227-a89f-14f1667bcd8c
+            value: ' "sousuo": "未找到搜索字段"'
+            varType: string
+            variable_selector:
+            - '1775416323619'
+            - text
+          id: 'true'
+          logical_operator: and
+        selected: false
+        title: 搜索
+        type: if-else
+      height: 147
+      id: '1775416510379'
+      position:
+        x: 2726.277581113812
+        y: 202.6785781577929
+      positionAbsolute:
+        x: 2726.277581113812
+        y: 202.6785781577929
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: contains
+            id: eb2a85c1-f2e4-41bd-95ba-91923213979f
+            value: ' "huitu": "未找到搜索字段"'
+            varType: string
+            variable_selector:
+            - '1775416323619'
+            - text
+          id: 'true'
+          logical_operator: and
+        selected: false
+        title: 绘图
+        type: if-else
+      height: 147
+      id: '1775416514690'
+      position:
+        x: 2721.029123926844
+        y: 381.10229571372645
+      positionAbsolute:
+        x: 2721.029123926844
+        y: 381.10229571372645
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: contains
+            id: d937b893-b52c-4e0b-bde8-28b2b4c9564d
+            value: ' "zhuanyefenxi": "未找到专业分析字段"'
+            varType: string
+            variable_selector:
+            - '1775416323619'
+            - text
+          id: 'true'
+          logical_operator: and
+        selected: false
+        title: 专业分析
+        type: if-else
+      height: 147
+      id: '1775416517708'
+      position:
+        x: 2726.277581113812
+        y: 546
+      positionAbsolute:
+        x: 2726.277581113812
+        y: 546
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: contains
+            id: 99ae0933-d5d7-4aff-8467-4bd93c94a338
+            value: '"liaotian": "未找到聊天字段"'
+            varType: string
+            variable_selector:
+            - '1775416323619'
+            - text
+          id: 'true'
+          logical_operator: and
+        selected: false
+        title: 聊天
+        type: if-else
+      height: 147
+      id: '1775416522043'
+      position:
+        x: 2746.853863557879
+        y: 709.4493688541307
+      positionAbsolute:
+        x: 2746.853863557879
+        y: 709.4493688541307
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        code: "def main(**kwargs):\n    import json\n    try:\n        # 获取输入的第一个值（通常就是\
+          \ arg1 对应的字符串）\n        raw = list(kwargs.values())[0] if kwargs else \"\
+          \"\n        # 如果 raw 是字典（比如输入直接是 {\"arg1\": \"...\"}），则取出 arg1 的值\n    \
+          \    if isinstance(raw, dict):\n            raw = raw.get(\"arg1\", list(raw.values())[0])\n\
+          \        # 确保是字符串\n        if not isinstance(raw, str):\n            raw\
+          \ = json.dumps(raw)\n        # 解析字符串为字典\n        data = json.loads(raw)\n\
+          \        result = data.get(\"搜索\", \"未找到搜索字段\")\n    except Exception as\
+          \ e:\n        result = f\"提取失败：{str(e)}\"\n    return {\"sousuo\": result}"
+        code_language: python3
+        outputs:
+          sousuo:
+            children: null
+            type: string
+        selected: false
+        title: 代码执行
+        type: code
+        variables:
+        - value_selector:
+          - '1775416323619'
+          - text
+          value_type: string
+          variable: arg1
+      height: 51
+      id: '1775416734311'
+      position:
+        x: 2437.3703730907837
+        y: 330.3012883988112
+      positionAbsolute:
+        x: 2437.3703730907837
+        y: 330.3012883988112
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        code: "def main(**kwargs):\n    import json\n    try:\n        raw = list(kwargs.values())[0]\
+          \ if kwargs else \"\"\n        if isinstance(raw, dict):\n            raw\
+          \ = raw.get(\"arg1\", list(raw.values())[0])\n        if not isinstance(raw,\
+          \ str):\n            raw = json.dumps(raw)\n        data = json.loads(raw)\n\
+          \        result = data.get(\"绘图\", \"未找到绘图字段\")\n    except Exception as\
+          \ e:\n        result = f\"提取失败：{str(e)}\"\n    return {\"huitu\": result}"
+        code_language: python3
+        outputs:
+          huitu:
+            children: null
+            type: string
+        selected: false
+        title: 代码执行 2
+        type: code
+        variables:
+        - value_selector:
+          - '1775416323619'
+          - text
+          value_type: string
+          variable: arg1
+      height: 51
+      id: '1775416737439'
+      position:
+        x: 2449.1282487731078
+        y: 434.0127362841831
+      positionAbsolute:
+        x: 2449.1282487731078
+        y: 434.0127362841831
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        code: "def main(**kwargs):\n    import json\n    try:\n        raw = list(kwargs.values())[0]\
+          \ if kwargs else \"\"\n        if isinstance(raw, dict):\n            raw\
+          \ = raw.get(\"arg1\", list(raw.values())[0])\n        if not isinstance(raw,\
+          \ str):\n            raw = json.dumps(raw)\n        data = json.loads(raw)\n\
+          \        result = data.get(\"专业分析\", \"未找到专业分析字段\")\n    except Exception\
+          \ as e:\n        result = f\"提取失败：{str(e)}\"\n    return {\"zhuanyefenxi\"\
+          : result}"
+        code_language: python3
+        outputs:
+          zhuanyefenxi:
+            children: null
+            type: string
+        selected: false
+        title: 代码执行 3
+        type: code
+        variables:
+        - value_selector:
+          - '1775416323619'
+          - text
+          value_type: string
+          variable: arg1
+      height: 51
+      id: '1775416740232'
+      position:
+        x: 2454.081141600531
+        y: 577.8125836292554
+      positionAbsolute:
+        x: 2454.081141600531
+        y: 577.8125836292554
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        code: "def main(**kwargs):\n    import json\n    try:\n        raw = list(kwargs.values())[0]\
+          \ if kwargs else \"\"\n        if isinstance(raw, dict):\n            raw\
+          \ = raw.get(\"arg1\", list(raw.values())[0])\n        if not isinstance(raw,\
+          \ str):\n            raw = json.dumps(raw)\n        data = json.loads(raw)\n\
+          \        result = data.get(\"聊天\", \"未找到聊天字段\")\n    except Exception as\
+          \ e:\n        result = f\"提取失败：{str(e)}\"\n    return {\"liaotian\": result}"
+        code_language: python3
+        outputs:
+          liaotian:
+            children: null
+            type: string
+        selected: false
+        title: 代码执行 4
+        type: code
+        variables:
+        - value_selector:
+          - '1775416323619'
+          - text
+          value_type: string
+          variable: arg1
+      height: 51
+      id: '1775416742680'
+      position:
+        x: 2454.081141600531
+        y: 722.6769789967449
+      positionAbsolute:
+        x: 2454.081141600531
+        y: 722.6769789967449
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        outputs:
+        - value_selector:
+          - '1775416323619'
+          - text
+          value_type: string
+          variable: text
+        selected: false
+        title: 输出 3
+        type: end
+      height: 87
+      id: '1775418982917'
+      position:
+        x: 2454.081141600531
+        y: 209.24209405980002
+      positionAbsolute:
+        x: 2454.081141600531
+        y: 209.24209405980002
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        outputs:
+        - value_selector:
+          - '1775416734311'
+          - sousuo
+          value_type: string
+          variable: text2
+        selected: false
+        title: 输出 4
+        type: end
+      height: 87
+      id: '1775419030793'
+      position:
+        x: 2705.701298669746
+        y: 118.54792377046479
+      positionAbsolute:
+        x: 2705.701298669746
+        y: 118.54792377046479
       selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
       width: 241
     viewport:
-      x: -1746.2870398973582
-      y: 50.89997139071852
-      zoom: 0.5832645261347128
+      x: -1020.0640686919203
+      y: 179.39579193333805
+      zoom: 0.6803950148943021
   rag_pipeline_variables: []
