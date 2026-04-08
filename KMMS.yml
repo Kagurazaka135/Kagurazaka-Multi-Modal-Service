@@ -711,17 +711,6 @@ workflow:
     - data:
         isInLoop: false
         sourceType: if-else
-        targetType: tool
-      id: 1775416510379-false-1773821371404-target
-      source: '1775416510379'
-      sourceHandle: 'false'
-      target: '1773821371404'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: if-else
         targetType: llm
       id: 1775416514690-false-1773825251127-target
       source: '1775416514690'
@@ -749,17 +738,6 @@ workflow:
       source: '1775416522043'
       sourceHandle: 'false'
       target: '1773825262447'
-      targetHandle: target
-      type: custom
-      zIndex: 0
-    - data:
-        isInLoop: false
-        sourceType: tool
-        targetType: llm
-      id: 1773821371404-source-1773825097535-target
-      source: '1773821371404'
-      sourceHandle: source
-      target: '1773825097535'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -797,26 +775,24 @@ workflow:
       type: custom
       zIndex: 0
     - data:
-        isInIteration: false
         isInLoop: false
-        sourceType: llm
-        targetType: end
-      id: 1775416323619-source-1775418982917-target
-      source: '1775416323619'
-      sourceHandle: source
-      target: '1775418982917'
+        sourceType: if-else
+        targetType: tool
+      id: 1775416510379-false-1773821371404-target
+      source: '1775416510379'
+      sourceHandle: 'false'
+      target: '1773821371404'
       targetHandle: target
       type: custom
       zIndex: 0
     - data:
-        isInIteration: false
         isInLoop: false
-        sourceType: code
-        targetType: end
-      id: 1775416734311-source-1775419030793-target
-      source: '1775416734311'
+        sourceType: tool
+        targetType: llm
+      id: 1773821371404-source-1773825097535-target
+      source: '1773821371404'
       sourceHandle: source
-      target: '1775419030793'
+      target: '1773825097535'
       targetHandle: target
       type: custom
       zIndex: 0
@@ -2471,7 +2447,7 @@ workflow:
       positionAbsolute:
         x: 2124.14958372352
         y: 209.24209405980002
-      selected: true
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom-note
@@ -2778,11 +2754,11 @@ workflow:
           conditions:
           - comparison_operator: contains
             id: 64f199fb-0dfb-4227-a89f-14f1667bcd8c
-            value: ' "sousuo": "未找到搜索字段"'
+            value: 未找到搜索字段
             varType: string
             variable_selector:
-            - '1775416323619'
-            - text
+            - '1775416734311'
+            - sousuo
           id: 'true'
           logical_operator: and
         selected: false
@@ -2807,11 +2783,11 @@ workflow:
           conditions:
           - comparison_operator: contains
             id: eb2a85c1-f2e4-41bd-95ba-91923213979f
-            value: ' "huitu": "未找到搜索字段"'
+            value: 未找到绘图字段
             varType: string
             variable_selector:
-            - '1775416323619'
-            - text
+            - '1775416737439'
+            - huitu
           id: 'true'
           logical_operator: and
         selected: false
@@ -2836,11 +2812,11 @@ workflow:
           conditions:
           - comparison_operator: contains
             id: d937b893-b52c-4e0b-bde8-28b2b4c9564d
-            value: ' "zhuanyefenxi": "未找到专业分析字段"'
+            value: 未找到专业分析字段
             varType: string
             variable_selector:
-            - '1775416323619'
-            - text
+            - '1775416740232'
+            - zhuanyefenxi
           id: 'true'
           logical_operator: and
         selected: false
@@ -2865,11 +2841,11 @@ workflow:
           conditions:
           - comparison_operator: contains
             id: 99ae0933-d5d7-4aff-8467-4bd93c94a338
-            value: '"liaotian": "未找到聊天字段"'
+            value: 未找到聊天字段
             varType: string
             variable_selector:
-            - '1775416323619'
-            - text
+            - '1775416742680'
+            - liaotian
           id: 'true'
           logical_operator: and
         selected: false
@@ -3028,53 +3004,30 @@ workflow:
       type: custom
       width: 241
     - data:
-        outputs:
-        - value_selector:
-          - '1775416323619'
-          - text
-          value_type: string
-          variable: text
+        author: 漫不经心的干饭人
+        desc: ''
+        height: 88
         selected: false
-        title: 输出 3
-        type: end
-      height: 87
-      id: '1775418982917'
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"我想想这分类的速度这些怎么提呢🤔","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1775640877666'
       position:
-        x: 2454.081141600531
-        y: 209.24209405980002
+        x: 2145.6839947412514
+        y: 485.4236271159087
       positionAbsolute:
-        x: 2454.081141600531
-        y: 209.24209405980002
-      selected: false
+        x: 2145.6839947412514
+        y: 485.4236271159087
       sourcePosition: right
       targetPosition: left
-      type: custom
-      width: 241
-    - data:
-        outputs:
-        - value_selector:
-          - '1775416734311'
-          - sousuo
-          value_type: string
-          variable: text2
-        selected: false
-        title: 输出 4
-        type: end
-      height: 87
-      id: '1775419030793'
-      position:
-        x: 2705.701298669746
-        y: 118.54792377046479
-      positionAbsolute:
-        x: 2705.701298669746
-        y: 118.54792377046479
-      selected: false
-      sourcePosition: right
-      targetPosition: left
-      type: custom
-      width: 241
+      type: custom-note
+      width: 240
     viewport:
-      x: -1020.0640686919203
-      y: 179.39579193333805
-      zoom: 0.6803950148943021
+      x: 103.94927778786314
+      y: 233.6377790987127
+      zoom: 0.31887033181247376
   rag_pipeline_variables: []
