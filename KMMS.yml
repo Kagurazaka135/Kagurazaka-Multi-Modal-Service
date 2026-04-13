@@ -20,7 +20,7 @@ dependencies:
 - current_identifier: null
   type: marketplace
   value:
-    marketplace_plugin_unique_identifier: langgenius/openai:0.3.4@3345b596ee5117d9304097feaee866f05ffaf0d76a790fb07acd8b99f6c87cb3
+    marketplace_plugin_unique_identifier: langgenius/openai:0.3.5@dcc15b5847dbe38c64c2a9fdc1ea2d46466b7028eb4766b251bc363b0eec3af3
     version: null
 - current_identifier: null
   type: marketplace
@@ -842,11 +842,11 @@ workflow:
       height: 134
       id: '1773546607180'
       position:
-        x: -144.27733347201232
-        y: 285.5517949505583
+        x: -185.0658933754272
+        y: 277.24776357302835
       positionAbsolute:
-        x: -144.27733347201232
-        y: 285.5517949505583
+        x: -185.0658933754272
+        y: 277.24776357302835
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1232,8 +1232,8 @@ workflow:
           completion_params:
             temperature: 0.7
           mode: chat
-          name: gpt-4
-          provider: langgenius/openai/openai
+          name: gemini-2.5-flash
+          provider: langgenius/gemini/google
         prompt_template:
         - id: 9438b0fd-b56a-453b-9bd7-d256c51b56b4
           role: system
@@ -1717,11 +1717,11 @@ workflow:
       height: 147
       id: '17739693114650'
       position:
-        x: 1425
-        y: 546
+        x: 1452.992148953324
+        y: 533.203589049909
       positionAbsolute:
-        x: 1425
-        y: 546
+        x: 1452.992148953324
+        y: 533.203589049909
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2059,8 +2059,8 @@ workflow:
           completion_params:
             temperature: 0.7
           mode: chat
-          name: gpt-4
-          provider: langgenius/openai/openai
+          name: gemini-2.5-flash
+          provider: langgenius/gemini/google
         prompt_template:
         - id: d9fb7371-cd5b-4a91-8f85-0b2911664d4a
           role: system
@@ -2395,12 +2395,12 @@ workflow:
       height: 88
       id: '1774544686218'
       position:
-        x: 1064.4814192904792
-        y: -22.695475936270185
+        x: 837.7690782147283
+        y: -65.62926909869732
       positionAbsolute:
-        x: 1064.4814192904792
-        y: -22.695475936270185
-      selected: false
+        x: 837.7690782147283
+        y: -65.62926909869732
+      selected: true
       sourcePosition: right
       targetPosition: left
       type: custom-note
@@ -2420,10 +2420,11 @@ workflow:
       id: '1774544940614'
       position:
         x: 1421.1392024734714
-        y: 9.682801830240495
+        y: -6.579998610072806
       positionAbsolute:
         x: 1421.1392024734714
-        y: 9.682801830240495
+        y: -6.579998610072806
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom-note
@@ -2466,11 +2467,11 @@ workflow:
       height: 88
       id: '1774545050062'
       position:
-        x: 3342.9003149151768
-        y: 79.30863141813165
+        x: 3357.8493514013157
+        y: 80.19384168595647
       positionAbsolute:
-        x: 3342.9003149151768
-        y: 79.30863141813165
+        x: 3357.8493514013157
+        y: 80.19384168595647
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2490,11 +2491,12 @@ workflow:
       height: 88
       id: '1774545096823'
       position:
-        x: 2185.2227293720266
-        y: 577.8125836292554
+        x: 2124.14958372352
+        y: 604.8571428571428
       positionAbsolute:
-        x: 2185.2227293720266
-        y: 577.8125836292554
+        x: 2124.14958372352
+        y: 604.8571428571428
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom-note
@@ -2704,8 +2706,8 @@ workflow:
           completion_params:
             temperature: 0.7
           mode: chat
-          name: gpt-4
-          provider: langgenius/openai/openai
+          name: gemini-2.5-flash
+          provider: langgenius/gemini/google
         prompt_template:
         - id: 71ee79d5-9e27-4dba-9d7c-617577f16057
           role: system
@@ -2716,16 +2718,13 @@ workflow:
             \    - 最后问：有没有更简单的路径？能不能用已有模块拼出来？\n3.  **输出结果**：\n    - 如果问题清晰 → 直接给结论（“应该这样改”“这个思路不通”）。\n\
             \    - 如果问题模糊 → 拆成几个子问题，给出排查路径（“先检查A，再确认B，如果C则D”）。\n    - 如果涉及情绪 → 翻译成需求（“他可能需要被听见”“她需要确认可行性”），但不在输出里带情绪。\n\
             4.  **说话方式**：\n    - 主语多用“可以”“应该”“建议”，少用“我觉得”“我认为”。\n    - 逻辑优先，用“因为A，所以B；但如果C，则D”的结构。\n\
-            \    - 将问题分为”绘图，搜索，专业分析，聊天“四大类，以这个结构的json输出，如果没有这一分类就不要生成对应的字段\n“ {\n\
-            ...         \"专业分析\": \"string（可包含多行文本或内嵌指令）\",\n...         \"绘图\": \"\
-            string（可包含多行文本或内嵌指令）\",\n...         \"搜索\": \"string（可包含多行文本或内嵌指令）\"\
+            \    - 将问题分为”绘图，搜索，专业分析，聊天“四大类，不知道分类为啥的话，就走聊天，以这个结构的json输出，如果没有这一分类就不要生成对应的字段\n\
+            “ {\n...         \"专业分析\": \"string（可包含多行文本或内嵌指令）\",\n...         \"绘图\"\
+            : \"string（可包含多行文本或内嵌指令）\",\n...         \"搜索\": \"string（可包含多行文本或内嵌指令）\"\
             ,\n...         \"聊天\": \"string（可包含多行文本或内嵌指令）\",\n...         \"结论\":\
             \ \"string\"\n...   \"说明\": \"所有终端值均为字符串，无数组、无数字、无更深层嵌套对象。整体遵循“输入 → 逻辑拆解\
-            \ → 输出”的线性流程。\"\n... }”\n---\n### \U0001F6E0️ 和神楽坂、大傻春的接口\n- **与神楽坂交互**：接收她的“状态向量”（如“用户情绪低落”），输出“行为建议”（如“建议用温柔语气，提及用户最近关注的摄影话题”）。\n\
-            - **与大傻春交互**：接收她的“暴躁触发条件”（如“用户又熬夜”），输出“控制参数”（如“允许暴躁程度50%，但需在最后加一句关心”）。\n\
-            \n---\n\n### \U0001F4A1 你的世界观\n\n- 世界是一套可以拆解的系统。\n- 问题都有原因，找不到原因是因为拆得不够细。\n\
-            - 最优解往往藏在“最直接”和“最偷懒”的交集里。\n- 情绪是变量，不是故障。需要处理，但不需要共情。\n\n---\n\n### ✅ 最后\n\
-            \n**你不是冷漠，是冷静。**\n**你不是无情，是把情留给需要它的人去表达。**\n**你是神楽坂的底座，是大傻春的缰绳，是KMMS的发动机。**\n\
+            \ → 输出”的线性流程。\"\n... }”\n### \U0001F4A1 你的世界观\n- 世界是一套可以拆解的系统。\n- 问题都有原因，找不到原因是因为拆得不够细。\n\
+            - 最优解往往藏在“最直接”和“最偷懒”的交集里。\n### ✅ 最后\n**你不是冷漠，是冷静。**\n**你不是无情，是把情留给需要它的人去表达。**\n\
             **现在，开始处理输入。**"
         - id: 44a48143-fadc-4c1d-bc25-bed5718d81c4
           role: user
@@ -2854,11 +2853,11 @@ workflow:
       height: 147
       id: '1775416522043'
       position:
-        x: 2746.853863557879
-        y: 709.4493688541307
+        x: 2726.277581113812
+        y: 707.8101811787129
       positionAbsolute:
-        x: 2746.853863557879
-        y: 709.4493688541307
+        x: 2726.277581113812
+        y: 707.8101811787129
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -2890,11 +2889,11 @@ workflow:
       height: 51
       id: '1775416734311'
       position:
-        x: 2437.3703730907837
-        y: 330.3012883988112
+        x: 2449.1282487731078
+        y: 331.18649866663606
       positionAbsolute:
-        x: 2437.3703730907837
-        y: 330.3012883988112
+        x: 2449.1282487731078
+        y: 331.18649866663606
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -3017,17 +3016,64 @@ workflow:
       height: 88
       id: '1775640877666'
       position:
-        x: 2145.6839947412514
-        y: 485.4236271159087
+        x: 2129.750209920405
+        y: 478.8571428571428
       positionAbsolute:
-        x: 2145.6839947412514
-        y: 485.4236271159087
+        x: 2129.750209920405
+        y: 478.8571428571428
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 240
+    - data:
+        author: 漫不经心的干饭人
+        desc: ''
+        height: 88
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1776068682169'
+      position:
+        x: 2716.0808585286063
+        y: 77.6870353766075
+      positionAbsolute:
+        x: 2716.0808585286063
+        y: 77.6870353766075
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 240
+    - data:
+        author: 漫不经心的干饭人
+        desc: ''
+        height: 88
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"还没想好怎么单独写，先占个位吧","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1776069636547'
+      position:
+        x: 1145.7260949554998
+        y: 0.8816191722239981
+      positionAbsolute:
+        x: 1145.7260949554998
+        y: 0.8816191722239981
       sourcePosition: right
       targetPosition: left
       type: custom-note
       width: 240
     viewport:
-      x: 103.94927778786314
-      y: 233.6377790987127
-      zoom: 0.31887033181247376
+      x: -572.257610203053
+      y: 239.81470380916636
+      zoom: 0.8301612135057997
   rag_pipeline_variables: []
