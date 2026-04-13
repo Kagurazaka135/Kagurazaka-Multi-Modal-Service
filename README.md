@@ -1,9 +1,3 @@
-根据工作流的实际节点逻辑，我对您提供的描述文档进行了以下修订。主要修正了**LLM模型分配**、**记忆实现机制**、**节点命名**以及**架构细节**，同时保留了中英文双语风格和项目定位。
-
-以下是修改后的完整文档：
-
-***
-
 # Kagurazaka Multi-Modal Service (KMMS)
 **A Dify-based routing system that synergizes text and multi-modal intent via a synchronization barrier.** It distinguishes memes from technical queries with engineering rigor and an expert photographer’s eye. Featuring a final logic audit node, it exercises *"bounded intelligence"*: if it replies *"kagurazaka不知道哦,"* it is a conscious decision to remain silent.
 
