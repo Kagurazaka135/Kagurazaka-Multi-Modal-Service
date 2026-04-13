@@ -61,12 +61,6 @@ If the system determines a request is anomalous or logically unsound, it trigger
 
 This is a conscious exercise of *"bounded intelligence"*—retaining the right to remain silent.
 
----
-
-### 📝 中文修订说明 / 中文版全文
-
-以下是中文版文档，已同步更新技术细节：
-
 # Kagurazaka-Multi-Modal-Service (KMMS)
 **“既是工程逻辑的堆叠，也是一种‘有边界感的智能’：既追求能力边界，也清醒地保留不回答的权利。”**
 
