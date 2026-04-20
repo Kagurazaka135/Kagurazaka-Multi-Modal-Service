@@ -10,6 +10,11 @@ dependencies:
 - current_identifier: null
   type: marketplace
   value:
+    marketplace_plugin_unique_identifier: langgenius/anthropic:0.3.8@6706e34565fb2c560cc3641c888b7f4e34288928df913e92241bd6d4f830a0cf
+    version: null
+- current_identifier: null
+  type: marketplace
+  value:
     marketplace_plugin_unique_identifier: langgenius/gemini:0.7.20@de0063a630a6d1b2c025fb84f3462ba5151fb60618309cd595c3f4711b1df847
     version: null
 - current_identifier: null
@@ -797,6 +802,53 @@ workflow:
       targetHandle: target
       type: custom
       zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: code
+      id: 1775416323619-source-1776653138772-target
+      source: '1775416323619'
+      sourceHandle: source
+      target: '1776653138772'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: if-else
+      id: 1776653138772-source-1776653185371-target
+      source: '1776653138772'
+      sourceHandle: source
+      target: '1776653185371'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1776653185371-false-1776653234697-target
+      source: '1776653185371'
+      sourceHandle: 'false'
+      target: '1776653234697'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: variable-aggregator
+      id: 1776653234697-source-1775195911738-target
+      source: '1776653234697'
+      sourceHandle: source
+      target: '1775195911738'
+      targetHandle: target
+      type: custom
+      zIndex: 0
     nodes:
     - data:
         selected: false
@@ -862,7 +914,7 @@ workflow:
 
             如果用户没有上传图片，请输出：no_image。
 
-            注意： 严禁任何多余的开场白，直接输出结果。如果判定有用，请务必输出详细原因，严禁只输出 OK 或空回复。'
+            注意： 严禁任何多余的开场白，直接输出结果。如果判定有用，请务必输出详细描述，严禁只输出 OK 或空回复。'
         selected: false
         title: 图片预处理
         type: llm
@@ -905,11 +957,11 @@ workflow:
       height: 147
       id: '1773823587147'
       position:
-        x: 1425
-        y: 140
+        x: 1452.992148953324
+        y: 149.24209405980002
       positionAbsolute:
-        x: 1425
-        y: 140
+        x: 1452.992148953324
+        y: 149.24209405980002
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1371,7 +1423,7 @@ workflow:
 
             如果用户没有上传图片，请输出：no_voice。
 
-            注意： 严禁任何多余的开场白，直接输出结果。如果判定有用，请务必输出详细原因，严禁只输出 OK 或空回复。'
+            注意： 严禁任何多余的开场白，直接输出结果。如果判定有用，请务必输出详细描述，严禁只输出 OK 或空回复。'
         selected: false
         title: 音频预处理
         type: llm
@@ -1409,11 +1461,11 @@ workflow:
       height: 147
       id: '17739692604691'
       position:
-        x: 1421.1392024734714
-        y: 344.46973446029045
+        x: 1452.992148953324
+        y: 342.8429135442658
       positionAbsolute:
-        x: 1421.1392024734714
-        y: 344.46973446029045
+        x: 1452.992148953324
+        y: 342.8429135442658
       selected: false
       sourcePosition: right
       targetPosition: left
@@ -1435,13 +1487,13 @@ workflow:
           role: system
           text: '你是一个视频意图分析助手。请分析用户上传的视频：
 
-            如果视频是表情包、纯色情视频、模糊不清的废视频、或与文字无关的装饰性视频，必须仅输出：useless。
+            如果视频纯色情视频、模糊不清的废视频、或与文字无关的装饰性视频，必须仅输出：useless。
 
             如果图片包含具体信息（如：相机/镜头照片、报错截图、文档、摄影作品），请用json简要描述视频内容，
 
             如果用户没有上传视频，请输出：no_video。
 
-            注意： 严禁任何多余的开场白，直接输出结果。如果判定有用，请务必输出详细原因，严禁只输出 OK 或空回复。'
+            注意： 严禁任何多余的开场白，直接输出结果。如果判定有用，请务必输出详细描述，严禁只输出 OK 或空回复。'
         selected: false
         title: 视频预处理
         type: llm
@@ -1840,10 +1892,10 @@ workflow:
       height: 87
       id: '1774197621044'
       position:
-        x: 1440.90474656777
+        x: 1452.992148953324
         y: 731.096037004384
       positionAbsolute:
-        x: 1440.90474656777
+        x: 1452.992148953324
         y: 731.096037004384
       selected: false
       sourcePosition: right
@@ -2017,12 +2069,12 @@ workflow:
       height: 87
       id: '1774254739188'
       position:
-        x: 4091.4882455240445
-        y: 963.2177483444343
+        x: 4073.849351401316
+        y: 949.2177497154735
       positionAbsolute:
-        x: 4091.4882455240445
-        y: 963.2177483444343
-      selected: false
+        x: 4073.849351401316
+        y: 949.2177497154735
+      selected: true
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -2427,7 +2479,9 @@ workflow:
           - text
         - - '1773825262447'
           - text
-      height: 160
+        - - '1776653234697'
+          - text
+      height: 187
       id: '1775195911738'
       position:
         x: 4447.762429624301
@@ -2483,9 +2537,9 @@ workflow:
             \    - 最后问：有没有更简单的路径？能不能用已有模块拼出来？\n3.  **输出结果**：\n    - 如果问题清晰 → 直接给结论（“应该这样改”“这个思路不通”）。\n\
             \    - 如果问题模糊 → 拆成几个子问题，给出排查路径（“先检查A，再确认B，如果C则D”）。\n    - 如果涉及情绪 → 翻译成需求（“他可能需要被听见”“她需要确认可行性”），但不在输出里带情绪。\n\
             4.  **说话方式**：\n    - 主语多用“可以”“应该”“建议”，少用“我觉得”“我认为”。\n    - 逻辑优先，用“因为A，所以B；但如果C，则D”的结构。\n\
-            \    - 将问题分为”绘图，搜索，专业分析，聊天“四大类，不知道分类为啥的话，就走聊天，以这个结构的json输出，如果没有这一分类就不要生成对应的字段\n\
+            \    - 将问题分为”绘图，代码，专业分析，聊天“四大类，不知道分类为啥的话，就走聊天，以这个结构的json输出，如果没有这一分类就不要生成对应的字段\n\
             “ {\n...         \"专业分析\": \"string（可包含多行文本或内嵌指令）\",\n...         \"绘图\"\
-            : \"string（可包含多行文本或内嵌指令）\",\n...         \"搜索\": \"string（可包含多行文本或内嵌指令）\"\
+            : \"string（可包含多行文本或内嵌指令）\",\n...         \"代码\": \"string（可包含多行文本或内嵌指令）\"\
             ,\n...         \"聊天\": \"string（可包含多行文本或内嵌指令）\",\n...         \"结论\":\
             \ \"string\"\n...   \"说明\": \"所有终端值均为字符串，无数组、无数字、无更深层嵌套对象。整体遵循“输入 → 逻辑拆解\
             \ → 输出”的线性流程。\"\n... }”\n### \U0001F4A1 你的世界观\n- 世界是一套可以拆解的系统。\n- 问题都有原因，找不到原因是因为拆得不够细。\n\
@@ -2525,7 +2579,7 @@ workflow:
             - huitu
           id: 'true'
           logical_operator: and
-        selected: true
+        selected: false
         title: 绘图
         type: if-else
       height: 147
@@ -2536,7 +2590,7 @@ workflow:
       positionAbsolute:
         x: 3541.3493626943746
         y: 146.13262562873683
-      selected: true
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -2560,12 +2614,12 @@ workflow:
       height: 147
       id: '1775416517708'
       position:
-        x: 3546.5978198813427
-        y: 311.0303299150104
+        x: 3541.3493626943746
+        y: 315.59016132305777
       positionAbsolute:
-        x: 3546.5978198813427
-        y: 311.0303299150104
-      selected: true
+        x: 3541.3493626943746
+        y: 315.59016132305777
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -2589,12 +2643,12 @@ workflow:
       height: 147
       id: '1775416522043'
       position:
-        x: 3546.5978198813427
-        y: 472.8405110937233
+        x: 3541.3493626943746
+        y: 471.8405111916546
       positionAbsolute:
-        x: 3546.5978198813427
-        y: 472.8405110937233
-      selected: true
+        x: 3541.3493626943746
+        y: 471.8405111916546
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -2628,7 +2682,7 @@ workflow:
       positionAbsolute:
         x: 3269.4484875406383
         y: 199.0430661991935
-      selected: true
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -2663,7 +2717,7 @@ workflow:
       positionAbsolute:
         x: 3274.4013803680614
         y: 342.8429135442658
-      selected: true
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -2697,7 +2751,7 @@ workflow:
       positionAbsolute:
         x: 3274.4013803680614
         y: 487.70730891175526
-      selected: true
+      selected: false
       sourcePosition: right
       targetPosition: left
       type: custom
@@ -2990,8 +3044,129 @@ workflow:
       targetPosition: left
       type: custom
       width: 241
+    - data:
+        author: 漫不经心的干饭人
+        desc: ''
+        height: 88
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"迭代虽然说出现报错就全崩，但emm搜索和后面分类之后的那仨，拿个llm判断输出质量来判断是迭代还是输出也确实能提升质量","type":"text","version":1}],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":null,"format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 240
+      height: 88
+      id: '1776652987909'
+      position:
+        x: 2354.5620061758627
+        y: 667.4716952414619
+      positionAbsolute:
+        x: 2354.5620061758627
+        y: 667.4716952414619
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 240
+    - data:
+        code: "\ndef main(**kwargs):\n    import json\n    try:\n        raw = list(kwargs.values())[0]\
+          \ if kwargs else \"\"\n        if isinstance(raw, dict):\n            raw\
+          \ = raw.get(\"arg1\", list(raw.values())[0])\n        if not isinstance(raw,\
+          \ str):\n            raw = json.dumps(raw)\n        data = json.loads(raw)\n\
+          \        result = data.get(\"代码\", \"未找到聊天字段\")\n    except Exception as\
+          \ e:\n        result = f\"提取失败：{str(e)}\"\n    return {\"daima\": result}"
+        code_language: python3
+        outputs:
+          daima:
+            children: null
+            type: string
+        selected: false
+        title: 代码执行 4
+        type: code
+        variables:
+        - value_selector:
+          - '1775416323619'
+          - text
+          value_type: string
+          variable: arg1
+      height: 51
+      id: '1776653138772'
+      position:
+        x: 3269.4484875406383
+        y: 667.4716952414619
+      positionAbsolute:
+        x: 3269.4484875406383
+        y: 667.4716952414619
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: contains
+            id: 9043734e-21d1-41f0-abe5-4f2eedc75fd1
+            value: 未找到聊天字段
+            varType: string
+            variable_selector:
+            - '1776653138772'
+            - daima
+          id: 'true'
+          logical_operator: and
+        selected: false
+        title: 条件分支 14
+        type: if-else
+      height: 147
+      id: '1776653185371'
+      position:
+        x: 3541.3493626943746
+        y: 659.6677684957627
+      positionAbsolute:
+        x: 3541.3493626943746
+        y: 659.6677684957627
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: claude-opus-4-20250514
+          provider: langgenius/anthropic/anthropic
+        prompt_template:
+        - id: b832eea5-ed9b-4a78-bb71-2b4d28376a5f
+          role: system
+          text: 根据{{#1776653138772.daima#}}的描述写一段代码
+        - id: 0b37a6d8-2f25-4a40-9ec3-6cdf1414bafa
+          role: user
+          text: '{{#1776653138772.daima#}}'
+        selected: true
+        title: LLM 16
+        type: llm
+        vision:
+          enabled: false
+      height: 87
+      id: '1776653234697'
+      position:
+        x: 4173.849351401316
+        y: 594.6677748613013
+      positionAbsolute:
+        x: 4173.849351401316
+        y: 594.6677748613013
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 241
     viewport:
-      x: -784.529968326714
-      y: 57.26472756305668
-      zoom: 0.857244057476252
+      x: -653.7984096410362
+      y: 419.9075098134925
+      zoom: 0.34019750744715105
   rag_pipeline_variables: []
