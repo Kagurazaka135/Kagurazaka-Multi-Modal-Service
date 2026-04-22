@@ -115,3 +115,4 @@ This is a conscious exercise of *"bounded intelligence"*—retaining the right t
 
 
 咋我吐槽的东西官方一个版本解决的差不多了🤔
+突然想到kmms完全外挂的记忆在处理多步骤的活的时候完全就是噩梦🤦‍♂️，还是得在处理前把之前进行的步骤塞进去，但这不就成rag了嘛，唉，兜兜转转半天，结果发现那设计屁都不是
