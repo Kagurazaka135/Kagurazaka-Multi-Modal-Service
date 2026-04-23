@@ -17,22 +17,21 @@ The workflow follows a strict **"Filter -> Aggregate -> Classify -> Render"** en
     - **Document**: Extracts and condenses text content.
 - **Useless Filter**: `IF-ELSE` gates ensure that only meaningful, structured data enters the aggregation pipeline.
 
-### 2. Routing & Classification Layer
+### ### 2. Routing & Classification Layer
 - **Variable Aggregator (Sync Barrier)**: Merges validated text input and multi-modal descriptions into a single context stream.
-- **Logic Core "Ganfanren" (GPT-4)**: A non-personality system core. It disassembles the aggregated input and routes it into **four specific task branches**:
-    - **Search** (Web Search)
-    - **Drawing** (Image Generation Prompt)
-    - **Professional Analysis** (Technical Deep Dive)
-    - **Chat** (Casual Interaction)
+- **Prior Intent Classifier (Gemini 2.5 Flash)**: Determines whether the query requires real-time web search before entering the main pipeline.
+- **Logic Core "Ganfanren" (GPT-4)**: A non-personality system core. It disassembles the aggregated input and routes it into **three specific task branches**:
+    - **Code** (Claude-3.5-Sonnet) – for programming and algorithmic tasks
+    - **Logic** (GPT-4) – for rigorous reasoning and complex instruction following
+    - **Chat** (Gemini) – for casual interaction and stable JSON formatting
 - **Code Extraction Nodes (Python)**: Parse the JSON output from the classifier to precisely feed each branch.
 
 ### 3. Task Execution Layer
-- **Search Branch**: Google SERP API -> Gemini 2.5 Flash Summary.
-- **Drawing Branch**: GPT-4 Prompt Generation.
-- **Professional Branch**: GPT-4 Analysis.
-- **Chat Branch**: Grok-3 Conversation Generation.
+- **Search Branch (Parallel Pre‑step)**: If the prior classifier indicates a need, Google SERP API is called and its results are injected into the aggregator as context.
+- **Code Branch**: Claude-3.5-Sonnet generates code or technical solutions.
+- **Logic Branch**: GPT-4 performs deep reasoning, mathematics, or complex logic.
+- **Chat Branch**: Gemini handles general conversation and maintains JSON structure.
 - **Memory System (Parallel Link)**: **Custom-built long-term memory** via Dify Knowledge Base Retrieval. The system separates **Input Memory** (user history) and **Output Memory** (AI history), retrieves relevant context, and injects it into the persona node to avoid context dilution.
-
 ### 4. Rendering & Audit Layer
 - **Persona Engine (Grok-3 / Gemini)**: The core persona engine. It rewrites technical "dry" data and memory context into **Kagurazaka’s** unique dual-personality voice.
 - **LLM 3 - Final Audit (Gemini 2.5 Flash)**: The final gatekeeper for logic, formatting, and safety. It checks for garbled text or logical errors.
@@ -77,20 +76,21 @@ This is a conscious exercise of *"bounded intelligence"*—retaining the right t
     - **文档** (GPT-4)：提取并精简文档内容。
 - **废料拦截**：通过 `条件分支` 确保只有有效信号进入聚合器。
 
-### 2. 路由与分类层
+### ### 2. 路由与分类层
 - **变量聚合器 (同步屏障)**：将用户文本与筛选后的多媒体描述合并为统一上下文。
-- **逻辑核心“干饭人” (GPT-4)**：无显性人格的系统大脑。负责拆解输入，将意图精确导向 **四个并行任务分支**：
-    - **搜索** (Web Search)
-    - **绘图** (Image Prompt)
-    - **专业分析** (Technical Analysis)
-    - **聊天** (Casual Chat)
+- **前置意图分类器 (Gemini 2.5 Flash)**：在主流程之前判断是否需要实时网络搜索。
+- **逻辑核心“干饭人” (GPT-4)**：无显性人格的系统大脑。负责拆解输入，将意图精确导向 **三个任务分支**：
+    - **代码** (Claude-3.5-Sonnet) – 处理编程与算法任务
+    - **逻辑推理** (GPT-4) – 进行严谨逻辑推导与复杂指令遵循
+    - **聊天** (Gemini) – 处理日常对话并保证 JSON 格式稳定
 - **代码提取器**：通过 Python 代码精准解析分类器输出的 JSON 字段。
 
 ### 3. 任务执行层
-- **搜索分支**：谷歌搜索插件 -> Gemini 2.5 Flash 总结。
-- **绘图/专业/聊天分支**：分别调用 GPT-4 与 Grok-3 进行处理。
+- **搜索分支（前置并行步骤）**：若前置分类器判断需要，调用 Google SERP API，将搜索结果注入聚合器作为上下文。
+- **代码分支**：Claude-3.5-Sonnet 生成代码或技术方案。
+- **逻辑分支**：GPT-4 执行深度推理、数学计算或复杂逻辑。
+- **聊天分支**：Gemini 处理通用对话并维护 JSON 结构。
 - **记忆系统**：**Workflow 无原生会话变量，KMMS 通过“知识库检索”实现骚操作长记忆**。系统将用户记忆（输入）与 AI 记忆（输出）分开检索，在人格节点汇合，确保 AI 既懂你又不会精神分裂。
-
 ### 4. 渲染与审计层
 - **人格引擎 (Grok-3 / Gemini)**：接收“干饭人”的结构化数据与记忆库检索结果，通过双重人格设定（温柔侧“神楽坂”/ 暴躁侧“大傻春”）进行风格化重写。
 - **LLM 3 - 最终审计 (Gemini 2.5 Flash)**：逻辑与风控最后一道防线，检查乱码与语气生硬问题。
